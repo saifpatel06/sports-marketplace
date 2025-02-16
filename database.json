@@ -10,575 +10,445 @@
   "products": [
     {
       "name": "Football Kit White Edition",
-      "description": [
-        "Material compositionPolyester",
-        "Care instructionsMachine Wash",
-        "Country of Origin India"
-      ],
+      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "1800",
       "category": "football",
       "imagePath": "images/ftkit.300.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "60db2d9e-e688-4f24-8989-d6cf22ffcecd"
     },
     {
       "name": "FOOTBALL kit PREMIUM EDITION",
-      "description": [
-        "Material compositionPolyester",
-        "Care instructionsMachine Wash",
-        "Country of Origin India"
-      ],
+      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "2500",
       "category": "football",
       "imagePath": "images/premiumkit1.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "d863c49b-2ccc-4413-b065-a87869475c7d"
     },
     {
       "name": "FOOTBALL KIT ADVANCED",
-      "description": [
-        "Material compositionPolyester",
-        "Care instructionsMachine Wash",
-        "Country of Origin India"
-      ],
+      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "2000",
       "category": "football",
       "imagePath": "images/ftkit2.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "729dc1a9-f34e-4907-883f-acd069aa3baf"
     },
     {
       "name": "PREMIUM EDITION FOOTBALL",
       "description": [
         "Brand THE PRO",
         "Material Nylon",
-       " Colour White-Multi 1",
-       " Item Weight 450 Grams",
-       " Sport Soccer  "    ],
+        " Colour White-Multi 1",
+        " Item Weight 450 Grams",
+        " Sport Soccer  "
+      ],
       "about": "World Cup Feel: Designed to emulate the performance and feel of a World Cup football, it ensures top-tier playability.<br/>Rubber-Molded Construction: The rubber-molded exterior provides durability, an excellent grip, and resistance to hard ground conditions.<br/>Regulation Size 5: This football conforms to the official size standards, delivering an authentic and professional playing experience.<br/>Complete Package: It includes a football pump and pin, simplifying inflation and maintenance, making it match-ready at all times. Versatile for All Ages and Genders: Suitable for men, women, and kids, it's a versatile training and match ball for players of all ages and genders.<br />High Visibility Design: The striking white and red color combination enhances visibility, making it easy to track the ball during play. Durable Leather-Like Texture: The ball's texture provides a comfortable and authentic feel during play, enhancing the overall experience.",
       "price": "1200",
       "category": "football",
       "imagePath": "images/football.300.jpg",
-      "sizes":[
-        "5",
-        "7",
-        "10",
-        "12"
-      ]
+      "sizes": ["5", "7", "10", "12"],
+      "id": "8797f04a-7714-458c-b671-f0da7f54cebb"
     },
     {
       "name": "ADVANCED EDITION FOOTBALL",
       "description": [
         "Brand THE PRO",
         "Material Nylon",
-       " Colour White-Multi 1",
-       " Item Weight 450 Grams",
-       " Sport Soccer  "    ],
+        " Colour White-Multi 1",
+        " Item Weight 450 Grams",
+        " Sport Soccer  "
+      ],
       "about": "World Cup Feel: Designed to emulate the performance and feel of a World Cup football, it ensures top-tier playability.<br/>Rubber-Molded Construction: The rubber-molded exterior provides durability, an excellent grip, and resistance to hard ground conditions.<br/>Regulation Size 5: This football conforms to the official size standards, delivering an authentic and professional playing experience.<br/>Complete Package: It includes a football pump and pin, simplifying inflation and maintenance, making it match-ready at all times. Versatile for All Ages and Genders: Suitable for men, women, and kids, it's a versatile training and match ball for players of all ages and genders.<br />High Visibility Design: The striking white and red color combination enhances visibility, making it easy to track the ball during play. Durable Leather-Like Texture: The ball's texture provides a comfortable and authentic feel during play, enhancing the overall experience.",
       "price": "900",
       "category": "football",
       "imagePath": "images/football2.jpeg",
-      "sizes":[
-        "5",
-        "7",
-        "10",
-        "12"
-      ]
+      "sizes": ["5", "7", "10", "12"],
+      "id": "503644c8-cf61-45cc-a8ce-8ac56088d114"
     },
     {
       "name": "SPECIAL TURF FOOTBALL",
       "description": [
         "Brand THE PRO",
         "Material Nylon",
-       " Colour White-Multi 1",
-       " Item Weight 450 Grams",
-       " Sport Soccer  "    ],
+        " Colour White-Multi 1",
+        " Item Weight 450 Grams",
+        " Sport Soccer  "
+      ],
       "about": "World Cup Feel: Designed to emulate the performance and feel of a World Cup football, it ensures top-tier playability.<br/>Rubber-Molded Construction: The rubber-molded exterior provides durability, an excellent grip, and resistance to hard ground conditions.<br/>Regulation Size 5: This football conforms to the official size standards, delivering an authentic and professional playing experience.<br/>Complete Package: It includes a football pump and pin, simplifying inflation and maintenance, making it match-ready at all times. Versatile for All Ages and Genders: Suitable for men, women, and kids, it's a versatile training and match ball for players of all ages and genders.<br />High Visibility Design: The striking white and red color combination enhances visibility, making it easy to track the ball during play. Durable Leather-Like Texture: The ball's texture provides a comfortable and authentic feel during play, enhancing the overall experience.",
       "price": "700",
       "category": "football",
       "imagePath": "images/football3.jpeg",
-      "sizes":[
-        "5",
-        "7",
-        "10",
-        "12"
-      ]
+      "sizes": ["5", "7", "10", "12"],
+      "id": "7ed40190-9198-436d-82b6-e243a73ec04a"
     },
     {
       "name": "ADVANCED FOOTBALL GLOVE",
       "description": [
-        
-"Brand THE PRO",
-"Material Rubber",
-"Sport Football Glove Type Goalie",
-"Age Range (Description) Adult",
-"Colour PURPLE",
-"Hand Orientation Ambidextrous"    ],
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport Football Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Colour PURPLE",
+        "Hand Orientation Ambidextrous"
+      ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control.<br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability",
       "price": "650",
       "category": "football",
       "imagePath": "images/glove3.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S", "M", "L", "XL"],
+      "id": "78359806-379f-4c08-bcde-da8e5ad05e4d"
     },
     {
       "name": "PREMIMUM FOOTBALL GLOVE",
       "description": [
-        
-"Brand THE PRO",
-"Material Rubber",
-"Sport Football Glove Type Goalie",
-"Age Range (Description) Adult",
-"Colour BLACK",
-"Hand Orientation Ambidextrous"    ],
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport Football Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Colour BLACK",
+        "Hand Orientation Ambidextrous"
+      ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control.<br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability",
       "price": "900",
       "category": "football",
       "imagePath": "images/gloves.300.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S", "M", "L", "XL"],
+      "id": "0deb1f67-2fee-439e-9a59-7338c531739c"
     },
     {
       "name": "BASIC FOOTBALL GLOVE",
       "description": [
-        
-"Brand THE PRO",
-"Material Rubber",
-"Sport Football Glove Type Goalie",
-"Age Range (Description) Adult",
-"Colour BLACK/WHITE",
-"Hand Orientation Ambidextrous"    ],
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport Football Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Colour BLACK/WHITE",
+        "Hand Orientation Ambidextrous"
+      ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control.<br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability",
       "price": "300",
       "category": "football",
       "imagePath": "images/glove2.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S", "M", "L", "XL"],
+      "id": "058e7fa3-be79-4244-a32d-6ddc404d9f33"
     },
     {
       "name": "FOOTBALL SHOES WHITE EDITION",
       "description": [
-       " Material typeLeather",
-"Closure typeLace-Up",
-"Heel typeNo Heel",
-"Water resistance levelNot Water Resistant",
-"Sole materialSynthetic Rubber",
-"StyleLow-Top",
-"Country of OriginIndia"    ],
+        " Material typeLeather",
+        "Closure typeLace-Up",
+        "Heel typeNo Heel",
+        "Water resistance levelNot Water Resistant",
+        "Sole materialSynthetic Rubber",
+        "StyleLow-Top",
+        "Country of OriginIndia"
+      ],
       "about": "Versatile Traction: Suitable for both firm ground (FG) and artificial grass (MG) surfaces.<br />Lightweight Design: Ensures agility and swift movements on the field.<br />Durable Construction: High-quality materials for long-lasting performance.<br />Breathable Upper: Keeps your feet cool and comfortable during intense play.Unisex Fit: Designed to fit both men and women comfortably.",
       "price": "1700",
       "category": "football",
       "imagePath": "images/fshoe3.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "69c009fa-618b-49bc-93df-2816f51eea95"
     },
     {
       "name": "FOOTBALL SHOES ADVANCED",
       "description": [
-       " Material typeLeather",
-"Closure typeLace-Up",
-"Heel typeNo Heel",
-"Water resistance levelNot Water Resistant",
-"Sole materialSynthetic Rubber",
-"StyleLow-Top",
-"Country of OriginIndia"    ],
+        " Material typeLeather",
+        "Closure typeLace-Up",
+        "Heel typeNo Heel",
+        "Water resistance levelNot Water Resistant",
+        "Sole materialSynthetic Rubber",
+        "StyleLow-Top",
+        "Country of OriginIndia"
+      ],
       "about": "Versatile Traction: Suitable for both firm ground (FG) and artificial grass (MG) surfaces.<br />Lightweight Design: Ensures agility and swift movements on the field.<br />Durable Construction: High-quality materials for long-lasting performance.<br />Breathable Upper: Keeps your feet cool and comfortable during intense play.Unisex Fit: Designed to fit both men and women comfortably.",
       "price": "1500",
       "category": "football",
       "imagePath": "images/fshoe2.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "4cc1c53a-0703-43a3-86ce-f78bdbf80670"
     },
     {
       "name": "FOOTBALL SHOES BLUE",
       "description": [
-       " Material typeLeather",
-"Closure typeLace-Up",
-"Heel typeNo Heel",
-"Water resistance levelNot Water Resistant",
-"Sole materialSynthetic Rubber",
-"StyleLow-Top",
-"Country of OriginIndia"    ],
+        " Material typeLeather",
+        "Closure typeLace-Up",
+        "Heel typeNo Heel",
+        "Water resistance levelNot Water Resistant",
+        "Sole materialSynthetic Rubber",
+        "StyleLow-Top",
+        "Country of OriginIndia"
+      ],
       "about": "Versatile Traction: Suitable for both firm ground (FG) and artificial grass (MG) surfaces.<br />Lightweight Design: Ensures agility and swift movements on the field.<br />Durable Construction: High-quality materials for long-lasting performance.<br />Breathable Upper: Keeps your feet cool and comfortable during intense play.Unisex Fit: Designed to fit both men and women comfortably.",
       "price": "1200",
       "category": "football",
       "imagePath": "images/fshoe1.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "55db759c-98cb-42c1-80bc-2343a1c9d1a6"
     },
     {
       "name": "FOOTBALL PAD WHITE EDITION",
-      "description": [
-        "Brand THE PRO",
-        "Sport Football",
-        "Colour WHITE",
-        "Style Compact"    ],
+      "description": ["Brand THE PRO", "Sport Football", "Colour WHITE", "Style Compact"],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "400",
       "category": "football",
       "imagePath": "images/fpad1.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-        
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "b01483be-31c8-4836-8e83-38a2b76fcecc"
     },
     {
       "name": "FOOTBALL PAD WHITE EDITION",
-      "description": [
-        "Brand THE PRO",
-        "Sport Football",
-        "Colour BLACK",
-        "Style Compact"    ],
+      "description": ["Brand THE PRO", "Sport Football", "Colour BLACK", "Style Compact"],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "700",
       "category": "football",
       "imagePath": "images/fpad2.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-        
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "894ca35c-122e-458c-812e-a877e03e0f88"
     },
     {
       "name": "FOOTBALL PAD RED COLOUR",
-      "description": [
-        "Brand THE PRO",
-        "Sport Football",
-        "Colour RED",
-        "Style Compact"    ],
+      "description": ["Brand THE PRO", "Sport Football", "Colour RED", "Style Compact"],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "700",
       "category": "football",
       "imagePath": "images/fpad3.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-        
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "2ae6e691-379c-4ecd-896d-af5a19e6cc1c"
     },
     {
       "name": "FIFA TROPHY",
       "description": [
         "Brand THE PRO",
-"Colour Gold",
-"Theme Sports",
-"Material Resin",
-"Style Classic",
-"Product Dimensions 6D x 6W x 13H Centimeters",
-"Recommended Uses For Product Home, Office, Decor",
-"Mounting Type free-standing",
-"Finish Type Polished",
-"Special Feature Intricate detailing, Electroplated finish, Resin material"    ],
+        "Colour Gold",
+        "Theme Sports",
+        "Material Resin",
+        "Style Classic",
+        "Product Dimensions 6D x 6W x 13H Centimeters",
+        "Recommended Uses For Product Home, Office, Decor",
+        "Mounting Type free-standing",
+        "Finish Type Polished",
+        "Special Feature Intricate detailing, Electroplated finish, Resin material"
+      ],
       "about": "High-Quality Resin Build: Durable and elegant, crafted for long-lasting use.<br />Exquisite Detailing: Precision-designed to reflect the grandeur of championship<br />Perfect Size: 13 CM Ideal for shelves, desks, or trophy cabinets without taking up much space.<br />Fan Favorite Design: A timeless symbol of football passion and achievement.<br />Electroplated Finish: Coated with an electroplating layer for a metallic, authentic look and added shine.",
       "price": "2700",
       "category": "football",
       "imagePath": "images/tropf.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-        
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "bf9ec65f-af65-4ef1-934c-163583ceddf2"
     },
     {
       "name": "UEFA TROPHY",
       "description": [
         "Brand THE PRO",
-"Colour SILVER",
-"Theme Sports",
-"Material Resin",
-"Style Classic",
-"Product Dimensions 6D x 6W x 13H Centimeters",
-"Recommended Uses For Product Home, Office, Decor",
-"Mounting Type free-standing",
-"Finish Type Polished",
-"Special Feature Intricate detailing, Electroplated finish, Resin material"    ],
+        "Colour SILVER",
+        "Theme Sports",
+        "Material Resin",
+        "Style Classic",
+        "Product Dimensions 6D x 6W x 13H Centimeters",
+        "Recommended Uses For Product Home, Office, Decor",
+        "Mounting Type free-standing",
+        "Finish Type Polished",
+        "Special Feature Intricate detailing, Electroplated finish, Resin material"
+      ],
       "about": "High-Quality Resin Build: Durable and elegant, crafted for long-lasting use.<br />Exquisite Detailing: Precision-designed to reflect the grandeur of championship<br />Perfect Size: 13 CM Ideal for shelves, desks, or trophy cabinets without taking up much space.<br />Fan Favorite Design: A timeless symbol of football passion and achievement.<br />Electroplated Finish: Coated with an electroplating layer for a metallic, authentic look and added shine.",
       "price": "2700",
       "category": "football",
       "imagePath": "images/tropu.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-        
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "d1e98ff6-f3d1-4a10-89f1-48a5abf0f6cf"
     },
     {
       "name": "UEFA TROPHY",
       "description": [
         "Brand THE PRO",
-"Colour SILVER",
-"Theme Sports",
-"Material Resin",
-"Style Classic",
-"Product Dimensions 6D x 6W x 13H Centimeters",
-"Recommended Uses For Product Home, Office, Decor",
-"Mounting Type free-standing",
-"Finish Type Polished",
-"Special Feature Intricate detailing, Electroplated finish, Resin material"    ],
+        "Colour SILVER",
+        "Theme Sports",
+        "Material Resin",
+        "Style Classic",
+        "Product Dimensions 6D x 6W x 13H Centimeters",
+        "Recommended Uses For Product Home, Office, Decor",
+        "Mounting Type free-standing",
+        "Finish Type Polished",
+        "Special Feature Intricate detailing, Electroplated finish, Resin material"
+      ],
       "about": "High-Quality Resin Build: Durable and elegant, crafted for long-lasting use.<br />Exquisite Detailing: Precision-designed to reflect the grandeur of championship<br />Perfect Size: 13 CM Ideal for shelves, desks, or trophy cabinets without taking up much space.<br />Fan Favorite Design: A timeless symbol of football passion and achievement.<br />Electroplated Finish: Coated with an electroplating layer for a metallic, authentic look and added shine.",
       "price": "2700",
       "category": "football",
       "imagePath": "images/tropu.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "88771f87-8600-457d-8f72-3ab07076747d"
     },
     {
       "name": "PREMIEAR LEAGUE TROPHY",
       "description": [
         "Brand THE PRO",
-"Colour SILVER",
-"Theme Sports",
-"Material Resin",
-"Style Classic",
-"Product Dimensions 6D x 6W x 13H Centimeters",
-"Recommended Uses For Product Home, Office, Decor",
-"Mounting Type free-standing",
-"Finish Type Polished",
-"Special Feature Intricate detailing, Electroplated finish, Resin material"    ],
+        "Colour SILVER",
+        "Theme Sports",
+        "Material Resin",
+        "Style Classic",
+        "Product Dimensions 6D x 6W x 13H Centimeters",
+        "Recommended Uses For Product Home, Office, Decor",
+        "Mounting Type free-standing",
+        "Finish Type Polished",
+        "Special Feature Intricate detailing, Electroplated finish, Resin material"
+      ],
       "about": "High-Quality Resin Build: Durable and elegant, crafted for long-lasting use.<br />Exquisite Detailing: Precision-designed to reflect the grandeur of championship<br />Perfect Size: 13 CM Ideal for shelves, desks, or trophy cabinets without taking up much space.<br />Fan Favorite Design: A timeless symbol of football passion and achievement.<br />Electroplated Finish: Coated with an electroplating layer for a metallic, authentic look and added shine.",
       "price": "2000",
       "category": "football",
       "imagePath": "images/troppl.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "e8712fa1-de24-4b6d-9a7e-c407a47099de"
     },
     {
       "name": "CRICKET KIT BLUE EDITION",
       "description": [
-        
-"Brand THE PRO",
-"Material compositionPolyester",
-"PatternSolid",
-"Closure typePolyester",
-"Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.", "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
+        "Brand THE PRO",
+        "Material compositionPolyester",
+        "PatternSolid",
+        "Closure typePolyester",
+        "Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
+        "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
       ],
       "about": "Material - These are polyester t-shirt which are made of high quality polyester faric and are soft & smooth with thread-count. They are comfortable.<br/>Pairing: Pair this sports jersey t-shirts with trackpant, washed jeans and sneakers. Ideal sports wear; party wear; casual wear; winter wear.<br/>Sizes and fit - Our unisex t shirt is available in S, M, L, XL, XXL AND perfect for both male and female.<br/>Care Instructions: Ensure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
       "price": "1800",
       "category": "Cricket",
       "imagePath": "images/cricketkt300.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "a4ddd60f-70ba-4baa-8184-c0bdbb860ba3"
     },
     {
       "name": "CRICKET PREMIMUM KIT",
       "description": [
-        
-"Brand THE PRO",
-"Material compositionPolyester",
-"PatternSolid",
-"Closure typePolyester",
-"Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.", "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
+        "Brand THE PRO",
+        "Material compositionPolyester",
+        "PatternSolid",
+        "Closure typePolyester",
+        "Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
+        "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
       ],
       "about": "Material - These are polyester t-shirt which are made of high quality polyester faric and are soft & smooth with thread-count. They are comfortable.<br/>Pairing: Pair this sports jersey t-shirts with trackpant, washed jeans and sneakers. Ideal sports wear; party wear; casual wear; winter wear.<br/>Sizes and fit - Our unisex t shirt is available in S, M, L, XL, XXL AND perfect for both male and female.<br/>Care Instructions: Ensure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
       "price": "2500",
       "category": "Cricket",
       "imagePath": "images/ckit2.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "b02a2248-4b6c-44a6-80fa-5967cb737c8c"
     },
     {
       "name": "CRICKET KIT ADVANCED",
       "description": [
-        
-"Brand THE PRO",
-"Material compositionPolyester",
-"PatternSolid",
-"Closure typePolyester",
-"Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.", "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
+        "Brand THE PRO",
+        "Material compositionPolyester",
+        "PatternSolid",
+        "Closure typePolyester",
+        "Care instructionsEnsure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
+        "Instructions are printed on the neck label for your convenience. Country of OriginIndia"
       ],
       "about": "Material - These are polyester t-shirt which are made of high quality polyester faric and are soft & smooth with thread-count. They are comfortable.<br/>Pairing: Pair this sports jersey t-shirts with trackpant, washed jeans and sneakers. Ideal sports wear; party wear; casual wear; winter wear.<br/>Sizes and fit - Our unisex t shirt is available in S, M, L, XL, XXL AND perfect for both male and female.<br/>Care Instructions: Ensure washing the tee in cold water, don't iron directly on the print and don't dry in direct sunlight.",
       "price": "2000",
       "category": "Cricket",
       "imagePath": "images/ckit3.jpg",
-      "sizes":[
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ]
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "id": "8c43fafe-c510-4e71-9909-47e518b8c355"
     },
     {
       "name": "LEATHER CRICKET BALL",
       "description": [
         "Brand THE PRO",
-"Material Cork, Leather",
-"Colour Red",
-"Item Weight 159 Grams",
-"Sport Cricket"       
-
+        "Material Cork, Leather",
+        "Colour Red",
+        "Item Weight 159 Grams",
+        "Sport Cricket"
       ],
       "about": "PREMIUM CONSTRUCTION: High-quality leather cricket ball with distinctive red colour and yellow 'Competent' branding for excellent visibility<br />PROFESSIONAL SEAM: Traditional 6-row stitched seam configuration ensures consistent bounce and superior grip for bowlers<br />MATCH READY: Regulation size cricket ball perfect for competitive matches and serious practice sessions<br />DURABILITY: Robust leather exterior withstands repeated impacts while maintaining shape and performance<br />PERFORMANCE: Balanced weight distribution and aerodynamic design deliver reliable flight characteristics and consistent behaviour",
       "price": "1200",
       "category": "Cricket",
-      "imagePath": "images/ball2300.jpg"
-      
+      "imagePath": "images/ball2300.jpg",
+      "id": "ef0c6866-1d99-4afb-859d-7c3b0a31dc98"
     },
     {
       "name": "WHITE LEATHER CRICKET BALL",
       "description": [
         "Brand THE PRO",
-"Material Cork, Leather",
-"Colour Red",
-"Item Weight 159 Grams",
-"Sport Cricket"       
-
+        "Material Cork, Leather",
+        "Colour Red",
+        "Item Weight 159 Grams",
+        "Sport Cricket"
       ],
       "about": "PREMIUM CONSTRUCTION: High-quality leather cricket ball with distinctive red colour and yellow 'Competent' branding for excellent visibility<br />PROFESSIONAL SEAM: Traditional 6-row stitched seam configuration ensures consistent bounce and superior grip for bowlers<br />MATCH READY: Regulation size cricket ball perfect for competitive matches and serious practice sessions<br />DURABILITY: Robust leather exterior withstands repeated impacts while maintaining shape and performance<br />PERFORMANCE: Balanced weight distribution and aerodynamic design deliver reliable flight characteristics and consistent behaviour",
       "price": "900",
       "category": "Cricket",
-      "imagePath": "images/ball3300.jpg"
-      
+      "imagePath": "images/ball3300.jpg",
+      "id": "33c2d9bd-ab0a-4947-9ef7-955838dc5717"
     },
     {
       "name": "YELLOW LEATHER BALL PACK OF SIX",
       "description": [
         "Brand THE PRO",
-"Material Cork, Leather",
-"Colour Red",
-"Item Weight 159 Grams",
-"Sport Cricket"       
-
+        "Material Cork, Leather",
+        "Colour Red",
+        "Item Weight 159 Grams",
+        "Sport Cricket"
       ],
       "about": "PREMIUM CONSTRUCTION: High-quality leather cricket ball with distinctive red colour and yellow 'Competent' branding for excellent visibility<br />PROFESSIONAL SEAM: Traditional 6-row stitched seam configuration ensures consistent bounce and superior grip for bowlers<br />MATCH READY: Regulation size cricket ball perfect for competitive matches and serious practice sessions<br />DURABILITY: Robust leather exterior withstands repeated impacts while maintaining shape and performance<br />PERFORMANCE: Balanced weight distribution and aerodynamic design deliver reliable flight characteristics and consistent behaviour",
       "price": "2000",
       "category": "Cricket",
-      "imagePath": "images/cball300.jpg"
-      
+      "imagePath": "images/cball300.jpg",
+      "id": "7653ef87-1630-49a6-9d82-a5738f7bcca5"
     },
     {
       "name": "ADVANCED CRICKET GLOVE",
       "description": [
-       
-"Brand THE PRO",
-"Material Rubber",
-"Sport CRICKET Glove Type Goalie",
-"Age Range (Description) Adult",
-"Colour PURPLE",
-"Hand Orientation Ambidextrous" 
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport CRICKET Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Colour PURPLE",
+        "Hand Orientation Ambidextrous"
       ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control. <br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability.",
       "price": "650",
       "category": "Cricket",
       "imagePath": "images/cglo1.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "bc3e2dae-cbf6-4d15-8523-e7e2dc01f127"
     },
     {
       "name": "PREMIUM CRICKET GLOVE",
       "description": [
-       
-"Brand THE PRO",
-"Material Rubber",
-"Sport CRICKET Glove Type Goalie",
-"Age Range (Description) Adult",
-"Hand Orientation Ambidextrous" 
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport CRICKET Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Hand Orientation Ambidextrous"
       ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control. <br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability.",
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cgol2.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "6605efba-41be-4520-95dd-f2d8eee7294e"
     },
     {
       "name": "BASIC CRICKET GLOVE",
       "description": [
-       
-"Brand THE PRO",
-"Material Rubber",
-"Sport CRICKET Glove Type Goalie",
-"Age Range (Description) Adult",
-"Hand Orientation Ambidextrous" 
+        "Brand THE PRO",
+        "Material Rubber",
+        "Sport CRICKET Glove Type Goalie",
+        "Age Range (Description) Adult",
+        "Hand Orientation Ambidextrous"
       ],
       "about": "Airculated Sweat Management Design<br />180° Thumb Wrap Improve Grip, Ball Control. <br />Double-Design Wristband To Protect The Wrist Joint.<br />High Performance Hyper Grip Latex Is Used Good Grip And Durability.",
       "price": "400",
       "category": "Cricket",
       "imagePath": "images/cglov3.jpeg",
-      "sizes":[
-        "S",
-        "M",
-        "L"
-      ]
+      "sizes": ["S", "M", "L"],
+      "id": "7fe4adc8-dc5d-4bc1-acbc-ad0470021e52"
     },
     {
       "name": "LEATHER CRICKET BAT",
@@ -588,13 +458,12 @@
         "Brand THE PRO",
         "Material Willow Wood",
         "Handle Material Polymer/Composite"
-
       ],
       "about": "In Box contents: 1 Cricket Bat with Cover | Material: Kashmir Willow | Grade: Grade 4 |<br /> Needs Knocking: NO | With Cover: Yes | Has Toe Guard: No<br />Suitable For: Leather Ball | Sweet Spot: Middle |<br />Spine Profile: Medium<br />Playing Style: All-Round hand select grade 4 kw Air Dried willow.",
       "price": "1700",
       "category": "Cricket",
-      "imagePath": "images/bat300.jpg"
-      
+      "imagePath": "images/bat300.jpg",
+      "id": "7ff4dee1-0ba1-482f-915d-094b152aa6f8"
     },
     {
       "name": "TENNIS CRICKET BAT",
@@ -604,13 +473,12 @@
         "Brand THE PRO",
         "Material Willow Wood",
         "Handle Material Polymer/Composite"
-
       ],
       "about": "In Box contents: 1 Cricket Bat with Cover | Material: Kashmir Willow | Grade: Grade 4 |<br /> Needs Knocking: NO | With Cover: Yes | Has Toe Guard: No<br />Suitable For: Leather Ball | Sweet Spot: Middle |<br />Spine Profile: Medium<br />Playing Style: All-Round hand select grade 4 kw Air Dried willow.",
       "price": "900",
       "category": "Cricket",
-      "imagePath": "images/bat2.jpeg"
-      
+      "imagePath": "images/bat2.jpeg",
+      "id": "f8637dbb-22fc-4f31-96dc-40909b4fe26d"
     },
     {
       "name": "SPECIAL TURF CRICKET BAT",
@@ -620,13 +488,12 @@
         "Brand THE PRO",
         "Material Willow Wood",
         "Handle Material Polymer/Composite"
-
       ],
       "about": "In Box contents: 1 Cricket Bat with Cover | Material: Kashmir Willow | Grade: Grade 4 |<br /> Needs Knocking: NO | With Cover: Yes | Has Toe Guard: No<br />Suitable For: Leather Ball | Sweet Spot: Middle |<br />Spine Profile: Medium<br />Playing Style: All-Round hand select grade 4 kw Air Dried willow.",
       "price": "700",
       "category": "Cricket",
-      "imagePath": "images/bat3.jpeg"
-      
+      "imagePath": "images/bat3.jpeg",
+      "id": "9e64c71c-f473-4dce-a85a-947668e31beb"
     },
     {
       "name": "CRICKET SHOES CREAM COLOUR",
@@ -638,18 +505,14 @@
         "Water resistance levelWater Resistant",
         "Sole materialRubber",
         "StyleMid-Top",
-        "Country of OriginIndia"   ],
+        "Country of OriginIndia"
+      ],
       "about": "Features: Top end Cricket Shoe for Dynamic Performance | Ankle Collar & Heel for Support & Comfort | Perforations in Upper for better Ventilation & Breathability | Full Metal Spikes | Suspension System in heels for Shock Absorption<br />Best Bit: Multifunction – Metal Spikes may be replaced with Rubber Studs | Can be used by Batsman, Bowler, Fielder & Wicket keeper<br />Upper Material: High Quality PU and Mesh | Lightweight and Flexible<br />Midsole Material: EVA Midsole for greater Cushioning | Comfortable Eva Sock Liner.<br />Outsole Material: Durable Rubber Outsole | Anti-torsion Midfoot Shank.",
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cshoe1.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "5119c6f0-cffd-4ad0-bfeb-bdd9e90b0246"
     },
     {
       "name": "CRICKET SHOES",
@@ -661,18 +524,14 @@
         "Water resistance levelWater Resistant",
         "Sole materialRubber",
         "StyleMid-Top",
-        "Country of OriginIndia"   ],
+        "Country of OriginIndia"
+      ],
       "about": "Features: Top end Cricket Shoe for Dynamic Performance | Ankle Collar & Heel for Support & Comfort | Perforations in Upper for better Ventilation & Breathability | Full Metal Spikes | Suspension System in heels for Shock Absorption<br />Best Bit: Multifunction – Metal Spikes may be replaced with Rubber Studs | Can be used by Batsman, Bowler, Fielder & Wicket keeper<br />Upper Material: High Quality PU and Mesh | Lightweight and Flexible<br />Midsole Material: EVA Midsole for greater Cushioning | Comfortable Eva Sock Liner.<br />Outsole Material: Durable Rubber Outsole | Anti-torsion Midfoot Shank.",
       "price": "1050",
       "category": "Cricket",
       "imagePath": "images/cshoe2.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "522ae39e-c0fe-4dcc-8fb7-e005d1d4f1e2"
     },
     {
       "name": "CRICKET SHOES ADVANCED",
@@ -684,77 +543,45 @@
         "Water resistance levelWater Resistant",
         "Sole materialRubber",
         "StyleMid-Top",
-        "Country of OriginIndia"   ],
+        "Country of OriginIndia"
+      ],
       "about": "Features: Top end Cricket Shoe for Dynamic Performance | Ankle Collar & Heel for Support & Comfort | Perforations in Upper for better Ventilation & Breathability | Full Metal Spikes | Suspension System in heels for Shock Absorption<br />Best Bit: Multifunction – Metal Spikes may be replaced with Rubber Studs | Can be used by Batsman, Bowler, Fielder & Wicket keeper<br />Upper Material: High Quality PU and Mesh | Lightweight and Flexible<br />Midsole Material: EVA Midsole for greater Cushioning | Comfortable Eva Sock Liner.<br />Outsole Material: Durable Rubber Outsole | Anti-torsion Midfoot Shank.",
       "price": "1200",
       "category": "Cricket",
       "imagePath": "images/cshoe3.jpg",
-      "sizes":[
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
-      ]
+      "sizes": ["7", "8", "9", "10", "11"],
+      "id": "1375f232-3d07-4f73-ae2e-bf021eeb15a4"
     },
     {
       "name": "CRICKET PAD CLASSIC",
-      "description": [
-        "Brand THE PRO",
-"Material Cotton",
-"Sport Cricket",
-"Item Weight 400 Grams"  ],
+      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "700",
       "category": "Cricket",
       "imagePath": "images/cpad1.jpg",
-      "sizes":[
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
+      "sizes": ["6", "7", "8", "9", "10"],
+      "id": "37f12cb4-8feb-4665-9567-2ceddbf55fd1"
     },
     {
       "name": "CRICKET PAD BASIC",
-      "description": [
-        "Brand THE PRO",
-"Material Cotton",
-"Sport Cricket",
-"Item Weight 400 Grams"  ],
+      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cpad2.jpg",
-      "sizes":[
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
+      "sizes": ["6", "7", "8", "9", "10"],
+      "id": "86adeb35-5f8e-44e6-aecb-a75c288d81bd"
     },
     {
       "name": "CRICKET PAD ADVANCED",
-      "description": [
-        "Brand THE PRO",
-"Material Cotton",
-"Sport Cricket",
-"Item Weight 400 Grams"  ],
+      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "2700",
       "category": "Cricket",
       "imagePath": "images/cpad3.jpg",
-      "sizes":[
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
+      "sizes": ["6", "7", "8", "9", "10"],
+      "id": "7dfeaf54-dd10-439a-b611-fb8d9be5c72c"
     }
-
-
-  ]
+  ],
+  "orders": []
 }
