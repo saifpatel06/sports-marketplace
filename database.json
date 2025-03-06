@@ -10,32 +10,65 @@
   "products": [
     {
       "name": "Football Kit White Edition",
-      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
+      "description": [
+        "Material compositionPolyester",
+        "Care instructionsMachine Wash",
+        "Country of Origin India"
+      ],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "1800",
       "category": "football",
       "imagePath": "images/ftkit.300.jpg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "60db2d9e-e688-4f24-8989-d6cf22ffcecd"
     },
     {
       "name": "FOOTBALL kit PREMIUM EDITION",
-      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
+      "description": [
+        "Material compositionPolyester",
+        "Care instructionsMachine Wash",
+        "Country of Origin India"
+      ],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "2500",
       "category": "football",
       "imagePath": "images/premiumkit1.jpg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "d863c49b-2ccc-4413-b065-a87869475c7d"
     },
     {
       "name": "FOOTBALL KIT ADVANCED",
-      "description": ["Material compositionPolyester", "Care instructionsMachine Wash", "Country of Origin India"],
+      "description": [
+        "Material compositionPolyester",
+        "Care instructionsMachine Wash",
+        "Country of Origin India"
+      ],
       "about": "Material: Made from lightweight, moisture-wicking polyester that keeps you cool and dry during intense play.<br />Design: Features a modern fit with a classic crew neck and short sleeves, allowing for unrestricted movement.<br />Team Colors: Available in vibrant team colors that showcase your pride and spirit, with bold graphics and logos that stand out. <br /> Versatility: Perfect for game days, practice sessions, or casual wear, this jersey is a must-have for any football enthusiast.",
       "price": "2000",
       "category": "football",
       "imagePath": "images/ftkit2.jpeg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "729dc1a9-f34e-4907-883f-acd069aa3baf"
     },
     {
@@ -51,7 +84,12 @@
       "price": "1200",
       "category": "football",
       "imagePath": "images/football.300.jpg",
-      "sizes": ["5", "7", "10", "12"],
+      "sizes": [
+        "5",
+        "7",
+        "10",
+        "12"
+      ],
       "id": "8797f04a-7714-458c-b671-f0da7f54cebb"
     },
     {
@@ -67,7 +105,12 @@
       "price": "900",
       "category": "football",
       "imagePath": "images/football2.jpeg",
-      "sizes": ["5", "7", "10", "12"],
+      "sizes": [
+        "5",
+        "7",
+        "10",
+        "12"
+      ],
       "id": "503644c8-cf61-45cc-a8ce-8ac56088d114"
     },
     {
@@ -83,7 +126,12 @@
       "price": "700",
       "category": "football",
       "imagePath": "images/football3.jpeg",
-      "sizes": ["5", "7", "10", "12"],
+      "sizes": [
+        "5",
+        "7",
+        "10",
+        "12"
+      ],
       "id": "7ed40190-9198-436d-82b6-e243a73ec04a"
     },
     {
@@ -100,7 +148,12 @@
       "price": "650",
       "category": "football",
       "imagePath": "images/glove3.jpeg",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "id": "78359806-379f-4c08-bcde-da8e5ad05e4d"
     },
     {
@@ -117,7 +170,12 @@
       "price": "900",
       "category": "football",
       "imagePath": "images/gloves.300.jpg",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "id": "0deb1f67-2fee-439e-9a59-7338c531739c"
     },
     {
@@ -134,7 +192,12 @@
       "price": "300",
       "category": "football",
       "imagePath": "images/glove2.jpeg",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "id": "058e7fa3-be79-4244-a32d-6ddc404d9f33"
     },
     {
@@ -152,7 +215,13 @@
       "price": "1700",
       "category": "football",
       "imagePath": "images/fshoe3.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "69c009fa-618b-49bc-93df-2816f51eea95"
     },
     {
@@ -170,7 +239,13 @@
       "price": "1500",
       "category": "football",
       "imagePath": "images/fshoe2.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "4cc1c53a-0703-43a3-86ce-f78bdbf80670"
     },
     {
@@ -188,37 +263,70 @@
       "price": "1200",
       "category": "football",
       "imagePath": "images/fshoe1.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "55db759c-98cb-42c1-80bc-2343a1c9d1a6"
     },
     {
       "name": "FOOTBALL PAD WHITE EDITION",
-      "description": ["Brand THE PRO", "Sport Football", "Colour WHITE", "Style Compact"],
+      "description": [
+        "Brand THE PRO",
+        "Sport Football",
+        "Colour WHITE",
+        "Style Compact"
+      ],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "400",
       "category": "football",
       "imagePath": "images/fpad1.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "b01483be-31c8-4836-8e83-38a2b76fcecc"
     },
     {
       "name": "FOOTBALL PAD WHITE EDITION",
-      "description": ["Brand THE PRO", "Sport Football", "Colour BLACK", "Style Compact"],
+      "description": [
+        "Brand THE PRO",
+        "Sport Football",
+        "Colour BLACK",
+        "Style Compact"
+      ],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "700",
       "category": "football",
       "imagePath": "images/fpad2.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "894ca35c-122e-458c-812e-a877e03e0f88"
     },
     {
       "name": "FOOTBALL PAD RED COLOUR",
-      "description": ["Brand THE PRO", "Sport Football", "Colour RED", "Style Compact"],
+      "description": [
+        "Brand THE PRO",
+        "Sport Football",
+        "Colour RED",
+        "Style Compact"
+      ],
       "about": "Perforations for breathability.<br />Lightweight protector providing excellent protection and impact cushioning<br />Postedto 5mm EVA Foam<br />In-Packge Contents : 1 Pair of Shinguard",
       "price": "700",
       "category": "football",
       "imagePath": "images/fpad3.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "2ae6e691-379c-4ecd-896d-af5a19e6cc1c"
     },
     {
@@ -239,7 +347,11 @@
       "price": "2700",
       "category": "football",
       "imagePath": "images/tropf.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "bf9ec65f-af65-4ef1-934c-163583ceddf2"
     },
     {
@@ -260,7 +372,11 @@
       "price": "2700",
       "category": "football",
       "imagePath": "images/tropu.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "88771f87-8600-457d-8f72-3ab07076747d"
     },
     {
@@ -281,7 +397,11 @@
       "price": "2000",
       "category": "football",
       "imagePath": "images/troppl.jpg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "e8712fa1-de24-4b6d-9a7e-c407a47099de"
     },
     {
@@ -298,7 +418,14 @@
       "price": "1800",
       "category": "Cricket",
       "imagePath": "images/cricketkt300.jpg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "a4ddd60f-70ba-4baa-8184-c0bdbb860ba3"
     },
     {
@@ -315,7 +442,14 @@
       "price": "2500",
       "category": "Cricket",
       "imagePath": "images/ckit2.jpg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "b02a2248-4b6c-44a6-80fa-5967cb737c8c"
     },
     {
@@ -332,7 +466,14 @@
       "price": "2000",
       "category": "Cricket",
       "imagePath": "images/ckit3.jpg",
-      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "id": "8c43fafe-c510-4e71-9909-47e518b8c355"
     },
     {
@@ -394,7 +535,11 @@
       "price": "650",
       "category": "Cricket",
       "imagePath": "images/cglo1.jpeg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "bc3e2dae-cbf6-4d15-8523-e7e2dc01f127"
     },
     {
@@ -410,7 +555,11 @@
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cgol2.jpeg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "6605efba-41be-4520-95dd-f2d8eee7294e"
     },
     {
@@ -426,7 +575,11 @@
       "price": "400",
       "category": "Cricket",
       "imagePath": "images/cglov3.jpeg",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "id": "7fe4adc8-dc5d-4bc1-acbc-ad0470021e52"
     },
     {
@@ -490,7 +643,13 @@
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cshoe1.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "5119c6f0-cffd-4ad0-bfeb-bdd9e90b0246"
     },
     {
@@ -509,7 +668,13 @@
       "price": "1050",
       "category": "Cricket",
       "imagePath": "images/cshoe2.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "522ae39e-c0fe-4dcc-8fb7-e005d1d4f1e2"
     },
     {
@@ -528,39 +693,101 @@
       "price": "1200",
       "category": "Cricket",
       "imagePath": "images/cshoe3.jpg",
-      "sizes": ["7", "8", "9", "10", "11"],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "id": "1375f232-3d07-4f73-ae2e-bf021eeb15a4"
     },
     {
       "name": "CRICKET PAD CLASSIC",
-      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
+      "description": [
+        "Brand THE PRO",
+        "Material Cotton",
+        "Sport Cricket",
+        "Item Weight 400 Grams"
+      ],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "700",
       "category": "Cricket",
       "imagePath": "images/cpad1.jpg",
-      "sizes": ["6", "7", "8", "9", "10"],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
       "id": "37f12cb4-8feb-4665-9567-2ceddbf55fd1"
     },
     {
       "name": "CRICKET PAD BASIC",
-      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
+      "description": [
+        "Brand THE PRO",
+        "Material Cotton",
+        "Sport Cricket",
+        "Item Weight 400 Grams"
+      ],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "900",
       "category": "Cricket",
       "imagePath": "images/cpad2.jpg",
-      "sizes": ["6", "7", "8", "9", "10"],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
       "id": "86adeb35-5f8e-44e6-aecb-a75c288d81bd"
     },
     {
       "name": "CRICKET PAD ADVANCED",
-      "description": ["Brand THE PRO", "Material Cotton", "Sport Cricket", "Item Weight 400 Grams"],
+      "description": [
+        "Brand THE PRO",
+        "Material Cotton",
+        "Sport Cricket",
+        "Item Weight 400 Grams"
+      ],
       "about": "Added protection on a top hat<br />Wear-resistant PVC instep with hard-wearing piping<br />Layered dual-density foam padded for optimum protection andflexibility<br />w-density foam sheet reinforcement vertical bolster<br />A high-Quality Batting Legguard to protect you from injury. A lightweight pads for quick pick and performance delivery.Made from premium quality PVC facing.",
       "price": "2700",
       "category": "Cricket",
       "imagePath": "images/cpad3.jpg",
-      "sizes": ["6", "7", "8", "9", "10"],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
       "id": "7dfeaf54-dd10-439a-b611-fb8d9be5c72c"
     }
   ],
-  "orders": []
+  "orders": [],
+  "cart": [
+    {
+      "id": "b5e33318-1248-4ef6-9c64-2a2768fc5a28",
+      "userId": "1739345433449",
+      "productId": "b02a2248-4b6c-44a6-80fa-5967cb737c8c",
+      "quantity": "14",
+      "size": "SELECT SIZE"
+    },
+    {
+      "id": "ec75901b-efe2-45c7-8ae7-407198b24cdd",
+      "userId": "1739345433449",
+      "productId": "bc3e2dae-cbf6-4d15-8523-e7e2dc01f127",
+      "quantity": "7",
+      "size": "L"
+    },
+    {
+      "id": "548cff92-0d35-4d8f-be05-14396a85fbfa",
+      "userId": "1739345433449",
+      "productId": "6605efba-41be-4520-95dd-f2d8eee7294e",
+      "quantity": "5",
+      "size": "M"
+    }
+  ]
 }

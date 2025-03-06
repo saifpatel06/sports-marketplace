@@ -1,0 +1,13 @@
+- Account -> 
+    - authentication
+    - login
+    - register page
+    - edit profile
+    - change password
+    - logout
+    - forgot password
+    - update billing details
+- Orders -> 
+    - place order
+    - get orders
+- Contact emails

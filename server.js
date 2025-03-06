@@ -10,7 +10,7 @@ const DB_PATH = path.join(__dirname, 'database.json');
 
 // Initialize database file if it doesn't exist
 if (!fs.existsSync(DB_PATH)) {
-    fs.writeFileSync(DB_PATH, JSON.stringify({ users: [], products: [], orders: [] }, null, 2));
+    fs.writeFileSync(DB_PATH, JSON.stringify({ users: [], products: [], orders: [], cart: [] }, null, 2));
     console.log('Database file created successfully');
 }
 
@@ -69,8 +69,6 @@ app.get("/api/products", (req, res) => {
     const db = loadDatabase();
     const { category } = req.query; // Get category from query params
 
-    console.log({category})
-
     if (category) {
         const filteredProducts = db.products.filter(product => 
             product.category && product.category.toLowerCase() === category.toLowerCase()
@@ -88,13 +86,109 @@ app.get("/api/products/:id", (req, res) => {
     const db = loadDatabase();
 
     const product = db.products.find(product => product.id === req.params.id);
-    console.log(product,"Product")
     if (!product) {
         return res.status(404).json({ message: 'Product not found' });
     }
 
     res.status(200).json(product);
 });
+
+// Add to Cart
+app.post("/api/cart", (req, res) => {
+    const { userId, productId, quantity, size } = req.body;
+
+    if (!userId || !productId || !quantity || !size) {
+        return res.status(400).json({ message: 'userId, productId, quantity and size are required' });
+    }
+
+    const db = loadDatabase();
+    
+    // Check if user exists
+    const user = db.users.find(user => user.id === Number(userId));
+    if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+    }
+
+    // Check if product exists
+    const product = db.products.find(product => product.id === productId);
+    if (!product) {
+        return res.status(404).json({ message: 'Product not found' });
+    }
+
+    // Initialize cart array if it doesn't exist
+    if (!db.cart) {
+        db.cart = [];
+    }
+
+    // Check if item already exists in cart
+    const existingCartItem = db.cart.find(item => item.userId === userId && item.productId === productId);
+    
+    if (existingCartItem) {
+        existingCartItem.quantity += quantity;
+    } else {
+        const cartItem = { id: uuid.v4(), userId, productId, quantity, size };
+        db.cart.push(cartItem);
+    }
+
+    saveDatabase(db);
+    res.status(201).json({ message: 'Item added to cart successfully' });
+});
+
+// Remove from Cart
+app.delete("/api/cart/:cartItemId", (req, res) => {
+    const { cartItemId } = req.params;
+    const { userId } = req.body;
+
+    if (!userId || !cartItemId) {
+        return res.status(400).json({ message: 'userId and cartItemId are required' });
+    }
+
+    const db = loadDatabase();
+    
+    // Check if cart item exists and belongs to user
+    const cartItemIndex = db.cart.findIndex(item => item.id === cartItemId && item.userId === userId);
+    
+    if (cartItemIndex === -1) {
+        return res.status(404).json({ message: 'Cart item not found' });
+    }
+
+    // Remove item from cart
+    db.cart.splice(cartItemIndex, 1);
+    saveDatabase(db);
+
+    res.status(200).json({ message: 'Item removed from cart successfully' });
+});
+
+// Get Cart Items by User ID
+app.get("/api/cart", (req, res) => {
+    const userId = req.query.userId;
+    
+    if (!userId) {
+        return res.status(400).json({ message: 'userId query param is required' });
+    }
+
+    const db = loadDatabase();
+    
+    // Initialize empty cart if it doesn't exist
+    if (!db.cart) {
+        db.cart = [];
+    }
+
+    // Get cart items for user
+    const cartItems = db.cart.filter(item => item.userId === userId);
+
+    // Get full product details for each cart item
+    const cartItemsWithDetails = cartItems.map(item => {
+        const product = db.products.find(p => p.id === item.productId);
+        return {
+            ...item,
+            product
+        };
+    });
+
+    res.status(200).json(cartItemsWithDetails);
+});
+
 
 // Create an Order
 app.post("/api/orders", (req, res) => {
