@@ -8,21 +8,17 @@ const app = express();
 const PORT = 3000;
 const DB_PATH = path.join(__dirname, 'database.json');
 
-// Initialize database file if not exists
+// Initialize database file if it doesn't exist
 if (!fs.existsSync(DB_PATH)) {
-    fs.writeFileSync(DB_PATH, JSON.stringify({ users: [] }, null, 2));
+    fs.writeFileSync(DB_PATH, JSON.stringify({ users: [], products: [], orders: [] }, null, 2));
     console.log('Database file created successfully');
 }
 
-const loadDatabase = () => {
-    return JSON.parse(fs.readFileSync(DB_PATH, 'utf8'));
-};
-
-const saveDatabase = (data) => {
-    fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
-};
+const loadDatabase = () => JSON.parse(fs.readFileSync(DB_PATH, 'utf8'));
+const saveDatabase = (data) => fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from 'public' directory
 
 // Register Route
 app.post('/api/register', (req, res) => {
@@ -68,14 +64,31 @@ app.post('/api/login', (req, res) => {
     });
 });
 
+// Get All Products (with optional filtering by category)
 app.get("/api/products", (req, res) => {
-    const products = loadDatabase().products;
-    res.status(200).json(products);
+    const db = loadDatabase();
+    const { category } = req.query; // Get category from query params
+
+    console.log({category})
+
+    if (category) {
+        const filteredProducts = db.products.filter(product => 
+            product.category && product.category.toLowerCase() === category.toLowerCase()
+        );
+
+        return res.status(200).json(filteredProducts);
+    }
+
+    res.status(200).json(db.products); // Return all products if no category is specified
 });
 
+
+// Get a Single Product by ID
 app.get("/api/products/:id", (req, res) => {
-    const products = loadDatabase().products;
-    const product = products.find(product => product.id === req.params.id);
+    const db = loadDatabase();
+
+    const product = db.products.find(product => product.id === req.params.id);
+    console.log(product,"Product")
     if (!product) {
         return res.status(404).json({ message: 'Product not found' });
     }
@@ -83,12 +96,12 @@ app.get("/api/products/:id", (req, res) => {
     res.status(200).json(product);
 });
 
-
+// Create an Order
 app.post("/api/orders", (req, res) => {
     const { userId, productId, quantity } = req.body;
 
     if (!userId || !productId || !quantity) {
-        return res.status(400).json({ message: 'userId, productId and quantity are required' });
+        return res.status(400).json({ message: 'userId, productId, and quantity are required' });
     }
 
     const db = loadDatabase();
@@ -113,8 +126,8 @@ app.post("/api/orders", (req, res) => {
     res.status(201).json({ message: 'Order created successfully', data: order.id });
 });
 
+// Get Orders by User ID
 app.get("/api/orders", (req, res) => {
-    // get the userId from the request url query paramms
     const userId = req.query.userId;
     if (!userId) {
         return res.status(400).json({ message: 'userId query param is required' });
@@ -126,7 +139,11 @@ app.get("/api/orders", (req, res) => {
     res.status(200).json(orders);
 });
 
+// Serve `index.html` for all unknown routes (SPA Fallback)
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });

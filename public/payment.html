@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="pro.css">
+
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+    
+                <div class="logo">  
+                <img src="logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Football.html">Football</a></li>
+                    <li><a href="Cricket.html">Cricket</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    </ul>
+                    </nav>
+                   <a href="Cart.html"> <img src="my cart.png" width="30px" height="30px" alt=""></a>
+                    <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+    
+        </div>
+    
+        </div>
+
+<div class="container1">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="mumbai">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="card_img.png" alt="">
+                    
+                </div>
+                <div class="inputbox">
+                  <span>payment type:</span> &nbsp;&nbsp;&nbsp;
+                   <select name="" id="">
+                        <option value="">Online payment</option>
+                        <option value="">Cash On Deleivery</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="name on card">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>
