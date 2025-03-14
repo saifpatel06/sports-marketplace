@@ -1,7 +1,13 @@
 async function main() {
     try {
-        const userId = localStorage.getItem("userId");
-        const response = await fetch(`/api/cart?userId=${userId}`);
+        const token = localStorage.getItem("token");
+
+        const response = await fetch(`/api/cart`, {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            }
+        });
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

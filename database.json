@@ -1,10 +1,16 @@
 {
   "users": [
     {
-      "id": 1739345433449,
+      "id": "0405037a-ac1d-446f-937e-a5a9e16c8b59",
       "name": "test",
-      "email": "test@tets.com",
-      "password": "$2b$10$6OURg4RWzE32swkyj1bpoej8ZlroknUPgIPj5W1WMYQpqoUnhz3lq"
+      "email": "test@test.com",
+      "password": "$2b$10$gixUOk9e3hiSIr5e2PtaBeL3phFZzB8A9MRVctRyPOVjBJsINx1iG"
+    },
+    {
+      "id": "74532755-3b4e-4b2f-8c62-0ca4fd0ad851",
+      "name": "test2",
+      "email": "test2@test.com",
+      "password": "$2b$10$Zf1S1G8Xh0FREDsCm65Npu3gnBXICeklgdjRF8jcnnZF8S2Ocr0gi"
     }
   ],
   "products": [
@@ -769,25 +775,35 @@
   "orders": [],
   "cart": [
     {
-      "id": "b5e33318-1248-4ef6-9c64-2a2768fc5a28",
-      "userId": "1739345433449",
-      "productId": "b02a2248-4b6c-44a6-80fa-5967cb737c8c",
-      "quantity": "14",
-      "size": "SELECT SIZE"
+      "id": "e3b334be-c557-4b7c-bfec-1e8381b7b0a5",
+      "productId": "d863c49b-2ccc-4413-b065-a87869475c7d",
+      "quantity": "1",
+      "price": "2500",
+      "userId": "0405037a-ac1d-446f-937e-a5a9e16c8b59"
     },
     {
-      "id": "ec75901b-efe2-45c7-8ae7-407198b24cdd",
-      "userId": "1739345433449",
-      "productId": "bc3e2dae-cbf6-4d15-8523-e7e2dc01f127",
-      "quantity": "7",
-      "size": "L"
+      "id": "1498e82b-d577-41c6-825a-fe6544216924",
+      "productId": "729dc1a9-f34e-4907-883f-acd069aa3baf",
+      "quantity": 18,
+      "size": "XL",
+      "price": "2000",
+      "userId": "0405037a-ac1d-446f-937e-a5a9e16c8b59"
     },
     {
-      "id": "548cff92-0d35-4d8f-be05-14396a85fbfa",
-      "userId": "1739345433449",
-      "productId": "6605efba-41be-4520-95dd-f2d8eee7294e",
-      "quantity": "5",
-      "size": "M"
+      "id": "f521b5db-c5d2-48d0-b516-526a3afdbeca",
+      "productId": "60db2d9e-e688-4f24-8989-d6cf22ffcecd",
+      "quantity": "4",
+      "size": "XL",
+      "price": "1800",
+      "userId": "0405037a-ac1d-446f-937e-a5a9e16c8b59"
+    },
+    {
+      "id": "0cbc16d5-7697-4dfe-82fd-1492c1ed4c5d",
+      "productId": "729dc1a9-f34e-4907-883f-acd069aa3baf",
+      "quantity": "1",
+      "size": "M",
+      "price": "2000",
+      "userId": "0405037a-ac1d-446f-937e-a5a9e16c8b59"
     }
   ]
 }

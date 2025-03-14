@@ -46,11 +46,6 @@ async function main() {
             throw new Error('Failed to fetch product data');
         }
 
-        console.log({
-            productData,
-            recommendations
-        })
-
         const individualProductContainer = document.getElementById("individual-product");
         const productHTML = `
             <div class="row">
@@ -135,12 +130,12 @@ async function addToCart() {
 
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('productId');
-        const userId = localStorage.getItem('userId');
+        const token = localStorage.getItem('token');
         const size = document.getElementById('size-select')?.value;
         const quantity = document.getElementById('quantity')?.value;
 
         console.log({
-            userId,
+            token,
             productId,
             quantity,
             size
@@ -149,9 +144,10 @@ async function addToCart() {
         const response = await fetch("/api/cart", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify({ userId, productId, quantity, size })
+            body: JSON.stringify({ productId, quantity, size })
         })
 
         if (response.ok) {
