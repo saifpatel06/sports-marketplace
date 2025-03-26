@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support</title>
+  <link rel="stylesheet" href="help.css">
+</head>
+<body background="all.jpg">
+  <div class="help-container">
+    <h1>Help & Support</h1>
+
+    <!-- FAQs Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">How do I track my order?</button>
+          <div class="faq-answer">
+            <p>You can track your order by logging into your account and visiting the "Order History" section. You will find a tracking link there.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is your return policy?</button>
+          <div class="faq-answer">
+            <p>We accept returns within 04 days of purchase. Please ensure the item is unused and in its original packaging.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I contact customer support?</button>
+          <div class="faq-answer">
+            <p>You can contact us via email at thepro070707@gmail.com </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Support Section -->
+    <div class="contact-section">
+      <h2>Contact Support</h2>
+      <div class="contact-options">
+        <div class="contact-option">
+          <h3>Email Support</h3>
+          <p>Email us at <a href="mailto:thepro070707@gmail.com">thepro070707@gmail.com</a>.</p>
+        </div>
+        <div class="contact-option">
+          <h3>Call Us</h3>
+          <p>Call us at <a href="tel:+91-7020660707">+91-7020660707</a>.</p>
+        </div>
+        <div class="contact-option">
+          <h3>Live Chat</h3>
+          <p>Click the button below to start a live chat.</p>
+          <a href="https://www.chatbase.co/chatbot-iframe/NdGmfrs5BgD6LMA27NgID"><button class="live-chat-btn">Start Live Chat</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="feedback-section">
+      <h2>Send Us Feedback</h2>
+      <form id="feedback-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <script >
+    // FAQ Toggle Functionality
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle('active');
+  });
+});
+
+// Live Chat Button
+document.querySelector('.live-chat-btn').addEventListener('click', () => {
+  alert('Live chat functionality goes here.');
+});
+
+// Feedback Form Submission
+document.getElementById('feedback-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Simulate sending feedback (replace with actual API call)
+  console.log('Feedback submitted:', { name, email, message });
+  alert('Thank you for your feedback!');
+});
+  </script>
+</body>
+</html>

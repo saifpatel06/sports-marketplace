@@ -1,410 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
 
-    <title>THE PRO| Ecommerce Website Design</title>
-  </head>
-  <link
-    rel="stylesheet"
-    href="pro.css"
-  />
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img
-              src="logo.png"
-              width="125px"
-            />
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="Football.html">Football</a></li>
-              <li><a href="Cricket.html">Cricket</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="account.html">Account</a></li>
-            </ul>
-          </nav>
-          <div class="profile-dropdown">
-            <div
-              onclick="toggle()"
-              class="profile-dropdown-btn"
-            >
-              <div class="profile-img"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro Video</title>
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-              <span
-                >Pathan
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
+        /* Full-screen styling for the video container */
+        #intro-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            <ul class="profile-dropdown-list">
-              <li class="profile-dropdown-list-item">
-                <a href="edit.html">
-                  <i class="fa-regular fa-user"></i>
-                  Edit Profile
-                </a>
-              </li>
+        /* Ensures the video is responsive */
+        #intro-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-              <li class="profile-dropdown-list-item">
-                <a href="myord.html">
-                  <i class="fa-regular fa-envelope"></i>
-                  My Orders
-                </a>
-              </li>
+    </style>
+</head>
 
-              <li class="profile-dropdown-list-item">
-                <a href="setting.html">
-                  <i class="fa-solid fa-sliders"></i>
-                  Settings
-                </a>
-              </li>
+<body>
 
-              <li class="profile-dropdown-list-item">
-                <a href="#">
-                  <i class="fa-regular fa-circle-question"></i>
-                  Help & Support
-                </a>
-              </li>
-              <hr />
-
-              <li class="profile-dropdown-list-item">
-                <a id="logout-button">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                  Log out
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a href="Cart.html">
-            <img
-              src="my cart.png"
-              width="30px"
-              height="30px"
-              alt=""
-          /></a>
-          <img
-            src="menu.png"
-            class="menu-icon"
-            onclick="menutoggle()"
-          />
-        </div>
-        <div class="row">
-          <div class="col-2">
-            <h1>THE PRO'S <br />AND IT'S A CHAMPIONS CHOICE !</h1>
-
-            <p>
-              Success isn't always about greatness. It's about consistency. Consistent<br />hard work gains success.
-              Greatness will come.
-            </p>
-            <a
-              href=""
-              class="btn"
-              >Explore Now &#8594;</a
-            >
-          </div>
-
-          <div class="col-2">
-            <img src="banner.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="categories">
-      <h1>FOOTBALL ITEMS</h1>
-
-      <div class="small-container">
-        <div class="row">
-          <div class="col-4">
-            <a href="football whitekit.html"> <img src="ftkit.300.jpg" /></a>
-          </div>
-
-          <div class="col-4">
-            <a href="premiuimfglov.html"><img src="gloves.300.jpg" /></a>
-          </div>
-          <div class="col-4">
-            <a href="premiumedfootball.html"> <img src="football.300.jpg" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="categories1">
-      <h1>Cricket ITEMS</h1>
-
-      <div class="small-container">
-        <div class="row">
-          <div class="col-4">
-            <a href="ckitblue.html"><img src="cricketkt300.jpg" /></a>
-          </div>
-
-          <div class="col-4">
-            <a href="leatherbat.html"><img src="bat300.jpg" /></a>
-          </div>
-          <div class="col-4">
-            <a href="yellowball.html"><img src="cball300.jpg" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="small-container">
-      <h2 class="title">Featured Products</h2>
-
-      <div class="row">
-        <div class="col-4">
-          <a href="GREENCKIT.HTML"><img src="ckit2.jpg" /></a>
-
-          <h4>cricket T-Shirt-trouser</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-
-          <p>RS 700</p>
-        </div>
-        <div class="col-4">
-          <a href="cgol3.html"> <img src="cglov3.jpeg" /></a>
-
-          <h4>CRICKET BASIC PREMIUM</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-
-          <p>RS 900</p>
-        </div>
-        <div class="col-4">
-          <a href="FOOTBALL KIT ADVANCED vale.html"> <img src="ftkit2.jpeg" /></a>
-
-          <h4>FOOTBALL FULL KIT ADVANCED</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-
-          <p>RS 2000</p>
-        </div>
-      </div>
-    </div>
-    <div class="offer">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-2">
-            <img
-              src="premiumkit1.jpg"
-              class="offer-img"
-            />
-          </div>
-
-          <div class="col-2">
-            <p>Exclusively Available on THE PRO STORE</p>
-
-            <h1>LIMITED EDITION COMPLETE FOOTBALL KIT</h1>
-
-            <small
-              >Our Newly Launched Black Colour Pro Full Football Edition Kit With High Advanced Feature , Grab The Deal
-              Now </small
-            ><br />
-            <a
-              href="football kit black.html"
-              class="btn"
-              >Buy Now &#8594;</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>really liked the quality of the kit and the print quality is also too good,must try it</p>
-
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="umar1.jpg" />
-            <h3>SK UMAR</h3>
-          </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Amazing kit its colour is so precious and it's really look premium after wearing it and it's comfortable
-              also
-            </p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="pathanT.jpg" />
-            <h3>TABISH</h3>
-          </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>The pro brand is one the best brand which i have used until now you should try it</p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="zaidCHOR.jpg" />
-            <h3>SK ZAID</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Download Our App</h3>
-
-            <p>Download App for Android and ios mobile phone.</p>
-            <div class="app-logo">
-              <img src="Play store.jpg" />
-              <img src="App store.jpg" />
-            </div>
-          </div>
-
-          <div class="footer-col-2">
-            <img src="logo.png" />
-
-            <p>our purpose is to make brand best and provide best quality products to our custmers</p>
-          </div>
-          <div class="footer-col-3">
-            <h3>USEFUL LINKS</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
-            </ul>
-          </div>
-          <div class="footer-col-4">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              a
-              <li>Youtube</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <p class="copyright">Copyright 2025 - our project</p>
-      </div>
+    <!-- Intro Video Section -->
+    <div id="intro-video" onclick="skipIntro()">
+        <video id="intro" autoplay muted>
+            <source src="intro.mp4" type="video/mp4">
+            <!-- Fallback content if video is unsupported -->
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <script>
-      (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-          window.chatbase = (...arguments) => {
-            if (!window.chatbase.q) {
-              window.chatbase.q = [];
-            }
-            window.chatbase.q.push(arguments);
-          };
-          window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-              if (prop === "q") {
-                return target.q;
-              }
-              return (...args) => target(prop, ...args);
-            },
-          });
+        // Skip intro and redirect to "index.html" when the user clicks anywhere on the screen
+        function skipIntro() {
+            window.location.href = 'home.html';
         }
-        const onLoad = function () {
-          const script = document.createElement("script");
-          script.src = "https://www.chatbase.co/embed.min.js";
-          script.id = "NdGmfrs5BgD6LMA27NgID";
-          script.domain = "www.chatbase.co";
-          document.body.appendChild(script);
-        };
-        if (document.readyState === "complete") {
-          onLoad();
-        } else {
-          window.addEventListener("load", onLoad);
-        }
-      })();
-    </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("introShown")) {
-          document.getElementById("intro").style.display = "none";
-        } else {
-          const video = document.getElementById("introVideo");
-          video.onended = function () {
-            document.getElementById("intro").classList.add("hidden");
+        // Ensure the video is visible and plays every time the user visits the site
+        window.addEventListener('load', () => {
+            const introVideo = document.getElementById('intro');
+            const introContainer = document.getElementById('intro-video');
+
+            // Set a timer to automatically redirect to index.html after 13 seconds
             setTimeout(() => {
-              document.getElementById("intro").style.display = "none";
-            }, 1000);
-          };
-          localStorage.setItem("introShown", "true");
-        }
-      });
+                skipIntro(); // Redirect after the intro video finishes
+            }, 13000); // 13 seconds duration for the intro video
+        });
     </script>
-    <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
 
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
-    <script>
-      let profileDropdownList = document.querySelector(".profile-dropdown-list");
-      let btn = document.querySelector(".profile-dropdown-btn");
+</body>
 
-      let classList = profileDropdownList.classList;
-
-      const toggle = () => classList.toggle("active");
-
-      window.addEventListener("click", function (e) {
-        if (!btn.contains(e.target)) classList.remove("active");
-      });
-    </script>
-    <script
-      src="./js/logout.js"
-      type="module"
-    ></script>
-  </body>
 </html>

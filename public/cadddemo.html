@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Billing Address</title>
+    <!-- External Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container1 {
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .inputBox {
+            margin-bottom: 15px;
+        }
+
+        .inputBox span {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .inputBox input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #555;
+        }
+
+        .inputBox input:focus {
+            border-color: #4CAF50;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container1">
+
+    <form id="address-form">
+
+        <h3 class="title">Change Billing Address</h3>
+
+        <!-- Full Name -->
+        <div class="inputBox">
+            <span>Full Name :</span>
+            <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="inputBox">
+            <span>Number :</span>
+            <input type="text" id="number" placeholder="Mobile Number" required>
+        </div>
+
+        <!-- Email -->
+        <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" id="email" placeholder="example@example.com" required>
+        </div>
+
+        <!-- Address -->
+        <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" id="address" placeholder="Room - Street - Locality" required>
+        </div>
+
+        <!-- City -->
+        <div class="inputBox">
+            <span>City :</span>
+            <input type="text" id="city" placeholder="Mumbai" required>
+        </div>
+
+        <!-- State -->
+        <div class="inputBox">
+            <span>State :</span>
+            <input type="text" id="state" placeholder="maharashtra" required>
+        </div>
+
+        <!-- Zip Code -->
+        <div class="inputBox">
+            <span>Zip Code :</span>
+            <input type="text" id="zip" placeholder="123 456" required>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Save Details" class="submit-btn">
+
+    </form>
+
+</div>
+
+<script>
+    // JavaScript Form Validation
+    document.getElementById('address-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent form submission for validation
+
+        // Collecting input values
+        const name = document.getElementById('name').value;
+        const number = document.getElementById('number').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('address').value;
+        const city = document.getElementById('city').value;
+        const state = document.getElementById('state').value;
+        const zip = document.getElementById('zip').value;
+
+        // Simple Validation
+        if (name === '' || number === '' || email === '' || address === '' || city === '' || state === '' || zip === '') {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        // More specific validation (for phone number and zip code format)
+        const phonePattern = /^[0-9]{10}$/;  // Simple phone validation (10 digits)
+        const zipPattern = /^[0-9]{6}$/;     // Simple zip code validation (6 digits)
+
+        if (!phonePattern.test(number)) {
+            alert('Please enter a valid mobile number.');
+            return;
+        }
+
+        if (!zipPattern.test(zip)) {
+            alert('Please enter a valid zip code.');
+            return;
+        }
+
+        // If everything is valid, you can process the form data
+        alert('Details saved successfully!');
+        
+        // Reset the form
+        document.getElementById('address-form').reset();
+    });
+</script>
+
+</body>
+</html>

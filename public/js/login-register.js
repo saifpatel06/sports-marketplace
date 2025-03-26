@@ -19,9 +19,19 @@ async function handleRegister(event) {
         }
         localStorage.setItem('token', data.token);
         alert('Registration successful');
-        window.location.href = '/';
+        window.location.href = '/home.html';
     } catch (error) {
         alert(error.message);
+    }
+}
+
+async function getProfile () {
+    try {
+        const token = localStorage.getItem('token');
+
+        console.log(token)
+    } catch (error) {
+        alert(error.message)
     }
 }
 
@@ -45,7 +55,7 @@ async function handleLogin(event) {
         }
         localStorage.setItem('token', data.token);
         alert('Login successful');
-        window.location.href = '/';
+        window.location.href = '/home.html';
     } catch (error) {
         alert(error.message);
     }

@@ -11,6 +11,24 @@
       "name": "test2",
       "email": "test2@test.com",
       "password": "$2b$10$Zf1S1G8Xh0FREDsCm65Npu3gnBXICeklgdjRF8jcnnZF8S2Ocr0gi"
+    },
+    {
+      "id": "f4525219-98b9-49b5-bbf6-695e49c4ad60",
+      "name": "tabish",
+      "email": "tabish@test.com",
+      "password": "$2b$10$nHwg33.1nO5w5WymCwkfSOQXTv/2DhxrgQS0gcVj77yFOrOS5A0SK"
+    },
+    {
+      "id": "e9b5eea5-92b3-427e-be69-19c5b9645e11",
+      "name": "mdabdulmusqsit",
+      "email": "atifsrk08@gmail.com",
+      "password": "$2b$10$GQtayy0OD/.6lfy4rzxccOdXmApu2fjWr3B.qXz2ZS4VPMBVMtWXq"
+    },
+    {
+      "id": "8d04508e-c3e1-48b7-b6b2-8452af84aa6e",
+      "name": "pathan",
+      "email": "tabish.pathan.0707@gmail.com",
+      "password": "$2b$10$NIUI06eymTIC.7kADeXSQOamTDDn0G9G432FOvsuNqB/94CuJMEIG"
     }
   ],
   "products": [
@@ -804,6 +822,38 @@
       "size": "M",
       "price": "2000",
       "userId": "0405037a-ac1d-446f-937e-a5a9e16c8b59"
+    },
+    {
+      "id": "90c61a7c-1eb6-4fdc-9ad4-bc1a583d0ebb",
+      "productId": "d863c49b-2ccc-4413-b065-a87869475c7d",
+      "quantity": "1",
+      "size": "M",
+      "price": "2500",
+      "userId": "f4525219-98b9-49b5-bbf6-695e49c4ad60"
+    },
+    {
+      "id": "a782c529-27ce-4f62-a12f-090002ae5da1",
+      "productId": "0deb1f67-2fee-439e-9a59-7338c531739c",
+      "quantity": "1",
+      "size": "S",
+      "price": "900",
+      "userId": "f4525219-98b9-49b5-bbf6-695e49c4ad60"
+    },
+    {
+      "id": "af8d609e-1749-4bc3-86f8-274880433bd9",
+      "productId": "503644c8-cf61-45cc-a8ce-8ac56088d114",
+      "quantity": "1",
+      "size": "5",
+      "price": "900",
+      "userId": "f4525219-98b9-49b5-bbf6-695e49c4ad60"
+    },
+    {
+      "id": "65a827af-fc1d-4a87-a141-5aacfdd60d8a",
+      "productId": "d863c49b-2ccc-4413-b065-a87869475c7d",
+      "quantity": "1",
+      "size": "L",
+      "price": "2500",
+      "userId": "8d04508e-c3e1-48b7-b6b2-8452af84aa6e"
     }
   ]
 }

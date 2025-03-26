@@ -44,6 +44,19 @@ router.post('/register', (req, res) => {
     });
 });
 
+router.post("/profile", (req, res) => {
+    const { token } = req.body;
+
+    console.log(token)
+
+    let db = loadDatabase();
+    
+    const decoded = verifyToken(token, JWT_SECRET);
+
+    console.log(decoded)
+
+})
+
 // Login Route
 router.post('/login', (req, res) => {
     const { email, password } = req.body;

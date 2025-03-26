@@ -28,7 +28,7 @@
 
 
 .container1 form .row{
-  display: flex;
+  display: center;
   flex-wrap: wrap;
   align-items: baseline;
   gap:15px;
@@ -84,6 +84,7 @@
 
 .container1 form .submit-btn{
   width: 100%;
+  margin-top: 10%;
   height: 100%;
   padding:12px;
   font-size: 17px;

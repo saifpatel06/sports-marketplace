@@ -1,0 +1,124 @@
+<!-- HTML for Registration, Login, and Forgot Password -->
+<form id="Regform">
+    <input type="text" id="username-register" placeholder="Username" required />
+    <input type="email" id="email-register" placeholder="Email" required />
+    <input type="password" id="password-register" placeholder="Password" required />
+    <button type="submit">Register</button>
+</form>
+
+<form id="Loginform">
+    <input type="email" id="email-login" placeholder="Email" required />
+    <input type="password" id="password-login" placeholder="Password" required />
+    <button type="submit">Login</button>
+</form>
+
+<!-- Forgot Password Link -->
+<a href="#" id="forgot-password-link">Forgot Password?</a>
+
+<!-- Forgot Password Form (Hidden Initially) -->
+<div id="forgot-password-form" style="display: none;">
+    <input type="email" id="email-forgot" placeholder="Enter your registered email" required />
+    <button type="submit" id="send-reset-link">Send Reset Link</button>
+</div>
+
+<!-- Reset Password Form (This form is shown after the reset link is clicked from email) -->
+<div id="reset-password-form" style="display: none;">
+    <input type="password" id="new-password" placeholder="New Password" required />
+    <button type="submit" id="reset-password">Reset Password</button>
+</div>
+
+<script>
+// Simulated "Database" for storing user information (localStorage)
+let usersDatabase = JSON.parse(localStorage.getItem('usersDatabase')) || [];
+
+// Function to handle user registration
+async function handleRegister(event) {
+    event.preventDefault();
+    const name = document.getElementById('username-register').value;
+    const email = document.getElementById('email-register').value;
+    const password = document.getElementById('password-register').value;
+
+    // Store user in the simulated database (localStorage)
+    usersDatabase.push({ name, email, password });
+    localStorage.setItem('usersDatabase', JSON.stringify(usersDatabase));
+
+    alert('Registration successful!');
+    window.location.href = '/home.html';  // Redirect to home page (for now just a placeholder)
+}
+
+// Function to handle user login
+async function handleLogin(event) {
+    event.preventDefault();
+    const email = document.getElementById('email-login').value;
+    const password = document.getElementById('password-login').value;
+
+    // Check if email and password exist in the simulated "database"
+    const user = usersDatabase.find(u => u.email === email && u.password === password);
+    if (user) {
+        alert('Login successful!');
+        window.location.href = '/home.html';  // Redirect to home page (for now just a placeholder)
+    } else {
+        alert('Invalid email or password!');
+    }
+}
+
+// Function to handle forgot password
+async function handleForgotPassword(event) {
+    event.preventDefault();
+    const email = document.getElementById('email-forgot').value;
+
+    // Check if email exists in the simulated "database"
+    const user = usersDatabase.find(u => u.email === email);
+    if (user) {
+        // Simulate sending a reset link by generating a "token"
+        const token = btoa(email + Date.now());  // Base64 encode email + timestamp as a simple token
+
+        // Save the reset token to localStorage (simulating email sending)
+        localStorage.setItem('resetToken', token);
+
+        alert('Password reset link has been sent to your email!');
+        document.getElementById('forgot-password-form').style.display = 'none';  // Hide forgot password form
+        document.getElementById('reset-password-form').style.display = 'block';  // Show reset password form
+    } else {
+        alert('Email not found!');
+    }
+}
+
+// Function to handle password reset (on the reset password page)
+async function handleResetPassword(event) {
+    event.preventDefault();
+    const newPassword = document.getElementById('new-password').value;
+    const token = localStorage.getItem('resetToken');
+
+    if (token) {
+        const email = atob(token).split(Date.now())[0];  // Decode the token (simple method)
+
+        // Find the user and update the password
+        const user = usersDatabase.find(u => u.email === email);
+        if (user) {
+            user.password = newPassword;  // Update the password
+            localStorage.setItem('usersDatabase', JSON.stringify(usersDatabase));  // Save updated data
+            localStorage.removeItem('resetToken');  // Remove the token after resetting password
+
+            alert('Password successfully reset!');
+            window.location.href = '/login.html';  // Redirect to login page
+        } else {
+            alert('Error resetting password!');
+        }
+    } else {
+        alert('Invalid reset link!');
+    }
+}
+
+// Show the Forgot Password form when the link is clicked
+document.getElementById('forgot-password-link').addEventListener('click', (event) => {
+    event.preventDefault();
+    document.getElementById('forgot-password-form').style.display = 'block';  // Show forgot password form
+});
+
+// Event listeners for registration, login, and forgot password forms
+document.getElementById('Regform').addEventListener('submit', handleRegister);
+document.getElementById('Loginform').addEventListener('submit', handleLogin);
+document.getElementById('forgot-password-form').addEventListener('submit', handleForgotPassword);
+document.getElementById('reset-password-form').addEventListener('submit', handleResetPassword);
+</script>
