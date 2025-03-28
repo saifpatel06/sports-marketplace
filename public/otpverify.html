@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Forgot Password - Confirm OTP</title>
     <style>
-        /* General reset for margin and padding */
+        /* General reset for margin and padding */                
         * {
             margin: 0;
             padding: 0;
@@ -16,25 +16,25 @@
         /* Body and page layout */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f7fc;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: radial-gradient(rgb(180, 180, 230), #696666);
         }
 
         .container {
-            background-color: white;
+            background:transparent;
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
+            text-align: center;
         }
 
-        .container h2 {
+        h2 {
             margin-bottom: 20px;
-            text-align: center;
             color: #333;
         }
 
@@ -50,24 +50,10 @@
             display: block;
         }
 
-        .input-group input {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.3s ease;
-        }
-
-        .input-group input:focus {
-            border-color: #4c90f3;
-        }
-
-        /* OTP input fields layout */
         .otp-input-group {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 10px;
         }
 
         .otp-input-group input {
@@ -77,7 +63,20 @@
             font-size: 18px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin: 0 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .otp-input-group input:focus {
+            border-color: #4c90f3;
+        }
+
+        /* Countdown Timer */
+        .timer {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff0000;
+            margin-bottom: 15px;
         }
 
         /* Button styling */
@@ -97,26 +96,40 @@
             background-color: #3571d2;
         }
 
+        .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
         /* Error message styling */
         .error-message {
             color: red;
             font-size: 14px;
-            text-align: center;
             margin-top: 10px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h2>Enter OTP to Reset Password</h2>
-        <!-- OTP confirmation form -->
-       
+        <div class="logo">
+            <img src="logo.png" width="125px">
+        </div>
 
+        <h2>Enter OTP to Reset Password</h2>
+
+        <!-- Countdown Timer -->
+        <div class="timer" id="timer">Time left: 01:00</div>
+
+        <!-- OTP confirmation form -->
+        <form id="otpForm">
             <div class="input-group">
-                <label for="otp">OTP Sent to Your Email</label>
+                <label>OTP Sent to Your Email</label>
                 <div class="otp-input-group">
-                    <!-- OTP input fields -->
                     <input type="text" id="otp1" maxlength="1" oninput="moveFocus(this, 'otp2')" required>
                     <input type="text" id="otp2" maxlength="1" oninput="moveFocus(this, 'otp3')" required>
                     <input type="text" id="otp3" maxlength="1" oninput="moveFocus(this, 'otp4')" required>
@@ -124,45 +137,73 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn" id="submitBtn">Verify OTP</button>
+           <a href="newpass.html"> <button type="submit" class="btn" id="submitBtn">Verify OTP</button></a>
             <div class="error-message" id="error-message"></div>
         </form>
     </div>
 
     <script>
+        let timerDuration = 60; // 1 minutes in seconds
+        let timerElement = document.getElementById("timer");
+        let submitButton = document.getElementById("submitBtn");
+
+        function updateTimer() {
+            let minutes = Math.floor(timerDuration / 60);
+            let seconds = timerDuration % 60;
+            seconds = seconds < 10 ? "0" + seconds : seconds; // Ensure two-digit format
+            timerElement.textContent = `Time left: ${minutes}:${seconds}`;
+
+            if (timerDuration === 0) {
+                submitButton.disabled = true;
+                timerElement.textContent = "Time expired! Request a new OTP.";
+            } else {
+                timerDuration--;
+                setTimeout(updateTimer, 1000);
+            }
+        }
+
+        setTimeout(updateTimer, 1000); // Start the countdown timer
+
         // Function to move focus between OTP input fields
         function moveFocus(currentInput, nextInputId) {
-            if (currentInput.value.length == currentInput.maxLength) {
-                document.getElementById(nextInputId).focus();
+            if (currentInput.value.length === currentInput.maxLength) {
+                let nextElement = document.getElementById(nextInputId);
+                if (nextElement) nextElement.focus();
             }
         }
 
         // OTP form validation and submission
-        document.getElementById('otpForm').addEventListener('submit', function(event) {
+        document.getElementById("otpForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
+            if (timerDuration <= 0) {
+                document.getElementById("error-message").textContent = "OTP expired. Please request a new OTP.";
+                return;
+            }
+
             // Get OTP values
-            const otp1 = document.getElementById('otp1').value;
-            const otp2 = document.getElementById('otp2').value;
-            const otp3 = document.getElementById('otp3').value;
-            const otp4 = document.getElementById('otp4').value;
-            const email = document.getElementById('email').value;
+            const otp1 = document.getElementById("otp1").value;
+            const otp2 = document.getElementById("otp2").value;
+            const otp3 = document.getElementById("otp3").value;
+            const otp4 = document.getElementById("otp4").value;
 
             // Validate OTP fields
             if (!otp1 || !otp2 || !otp3 || !otp4) {
-                document.getElementById('error-message').textContent = 'Please enter the full OTP.';
+                document.getElementById("error-message").textContent = "Please enter the full OTP.";
                 return;
             }
 
             // Combine the OTP
             const otp = otp1 + otp2 + otp3 + otp4;
 
-            // Simulate OTP verification (this should be handled by backend in real-world)
-            if (otp === '1234') { // Just a demo OTP
-                alert('OTP verified! You can now reset your password.');
+            // Simulate OTP verification (replace with backend call in real-world)
+            if (otp === "1234" ) { // Just a demo OTP
+                alert("OTP verified! You can now reset your password."); 
+                window.location.href='newpass.html'              
                 // Proceed to password reset logic (redirect or show password reset form)
-            } else {
-                document.getElementById('error-message').textContent = 'Invalid OTP. Please try again.';
+            }
+             else {
+                document.getElementById("error-message").textContent = "Invalid OTP. Please try again.";
             }
         });
     </script>

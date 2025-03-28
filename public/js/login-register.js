@@ -25,15 +25,6 @@ async function handleRegister(event) {
     }
 }
 
-async function getProfile () {
-    try {
-        const token = localStorage.getItem('token');
-
-        console.log(token)
-    } catch (error) {
-        alert(error.message)
-    }
-}
 
 async function handleLogin(event) {
     event.preventDefault();

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reset Password</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(rgb(180, 180, 230), #696666);
+            position: relative;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+            transform: translateY(-10px);
+            color: #0ef;
+            box-shadow: 0 0 20px #0ef;   
+        }
+
+        /* Form container */
+        .container {
+            background:transparent;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input field styling */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .password-wrapper input {
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Password strength meter */
+        .strength-meter {
+            height: 6px;
+            width: 100%;
+            background: #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .strength-bar {
+            height: 6px;
+            width: 0%;
+            background: red;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .strength-text {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        /* Submit button */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4c90f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3571d2;
+        }
+
+        /* Error message */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo at the top left -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <div class="container">
+        <h2>Reset Your Password</h2>
+
+        <!-- Reset Password Form -->
+        <form id="resetPasswordForm">
+            <!-- New Password Field -->
+            <div class="input-group">
+                <label for="newPassword">New Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="newPassword" required oninput="checkPasswordStrength()">
+                    <span class="toggle-password" onclick="togglePassword('newPassword')">👁</span>
+                </div>
+                <!-- Password Strength Meter -->
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="strength-text" id="strengthText"></div>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmPassword" required>
+                    <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁</span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Reset Password</button>
+            <div class="error-message" id="error-message"></div>
+            <div class="success-message" id="success-message"></div>
+        </form>
+    </div>
+
+    <script>
+        // Toggle password visibility
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.type = field.type === "password" ? "text" : "password";
+        }
+
+        // Password strength checker
+        function checkPasswordStrength() {
+            const password = document.getElementById("newPassword").value;
+            const strengthBar = document.getElementById("strengthBar");
+            const strengthText = document.getElementById("strengthText");
+
+            let strength = 0;
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[\W]/.test(password)) strength++;
+
+            // Update strength bar and text
+            const strengthLevels = ["Weak", "Fair", "Good", "Strong", "Very Strong"];
+            const colors = ["red", "orange", "yellow", "green", "darkgreen"];
+
+            strengthBar.style.width = (strength * 20) + "%";
+            strengthBar.style.background = colors[strength - 1] || "red";
+            strengthText.textContent = strengthLevels[strength - 1] || "Too Weak";
+        }
+
+        // Form submission validation
+        document.getElementById("resetPasswordForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const newPassword = document.getElementById("newPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const errorMessage = document.getElementById("error-message");
+            const successMessage = document.getElementById("success-message");
+
+            errorMessage.textContent = "";
+            successMessage.textContent = "";
+
+            if (newPassword.length < 8) {
+                errorMessage.textContent = "Password must be at least 8 characters long.";
+                return;
+            }
+
+            if (newPassword !== confirmPassword) {
+                errorMessage.textContent = "Passwords do not match.";
+                return;
+            }
+
+            successMessage.textContent = "Password reset successfully!";
+            // Proceed with actual password reset logic (e.g., API request)
+        });
+    </script>
+
+</body>
+</html>
