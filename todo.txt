@@ -1,13 +1,16 @@
 - Account -> 
     - authentication
-    - login
-    - register page
+    - login (done)
+    - register page(done)
     - edit profile
     - change password
-    - logout
+    - logout (done)
     - forgot password
     - update billing details
 - Orders -> 
     - place order
     - get orders
-- Contact emails
+    - after placing order a email should be send on user email of confirmation
+- Contact emails 
+   - help&support page has a feedback form that data should be send to admin email thepro070707@gmail.com
+   - Contact page has a contact form that data should be send to admin email thepro070707@gmail.com
