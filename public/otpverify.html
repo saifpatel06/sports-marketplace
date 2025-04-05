@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forgot Password - Confirm OTP</title>
+    <title>Forgot Password - Email Verification</title>
+
     <style>
         /* General reset for margin and padding */                
         * {
@@ -71,14 +72,6 @@
             border-color: #4c90f3;
         }
 
-        /* Countdown Timer */
-        .timer {
-            font-size: 16px;
-            font-weight: bold;
-            color: #ff0000;
-            margin-bottom: 15px;
-        }
-
         /* Button styling */
         .btn {
             width: 100%;
@@ -120,93 +113,37 @@
             <img src="logo.png" width="125px">
         </div>
 
-        <h2>Enter OTP to Reset Password</h2>
-
-        <!-- Countdown Timer -->
-        <div class="timer" id="timer">Time left: 01:00</div>
+        <h2>Verify Your Email Address</h2>
 
         <!-- OTP confirmation form -->
         <form id="otpForm">
             <div class="input-group">
-                <label>OTP Sent to Your Email</label>
-                <div class="otp-input-group">
-                    <input type="text" id="otp1" maxlength="1" oninput="moveFocus(this, 'otp2')" required>
-                    <input type="text" id="otp2" maxlength="1" oninput="moveFocus(this, 'otp3')" required>
-                    <input type="text" id="otp3" maxlength="1" oninput="moveFocus(this, 'otp4')" required>
-                    <input type="text" id="otp4" maxlength="1" oninput="moveFocus(this, 'submitBtn')" required>
-                </div>
+                <label>Enter Your Email Address</label>
+                <input type="email" id="email" class="form-control" required>
             </div>
 
-           <a href="newpass.html"> <button type="submit" class="btn" id="submitBtn">Verify OTP</button></a>
+            <button type="submit" class="btn" id="submitBtn">Verify Email</button>
+
             <div class="error-message" id="error-message"></div>
         </form>
     </div>
 
     <script>
-        let timerDuration = 60; // 1 minutes in seconds
-        let timerElement = document.getElementById("timer");
-        let submitButton = document.getElementById("submitBtn");
-
-        function updateTimer() {
-            let minutes = Math.floor(timerDuration / 60);
-            let seconds = timerDuration % 60;
-            seconds = seconds < 10 ? "0" + seconds : seconds; // Ensure two-digit format
-            timerElement.textContent = `Time left: ${minutes}:${seconds}`;
-
-            if (timerDuration === 0) {
-                submitButton.disabled = true;
-                timerElement.textContent = "Time expired! Request a new OTP.";
-            } else {
-                timerDuration--;
-                setTimeout(updateTimer, 1000);
-            }
-        }
-
-        setTimeout(updateTimer, 1000); // Start the countdown timer
-
-        // Function to move focus between OTP input fields
-        function moveFocus(currentInput, nextInputId) {
-            if (currentInput.value.length === currentInput.maxLength) {
-                let nextElement = document.getElementById(nextInputId);
-                if (nextElement) nextElement.focus();
-            }
-        }
-
-        // OTP form validation and submission
         document.getElementById("otpForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
-            if (timerDuration <= 0) {
-                document.getElementById("error-message").textContent = "OTP expired. Please request a new OTP.";
+            const email = document.getElementById("email").value;
+            
+            // Basic email validation
+            if (!email.includes('@') || !email.includes('.')) {
+                document.getElementById("error-message").textContent = "Please enter a valid email address.";
                 return;
             }
 
-            // Get OTP values
-            const otp1 = document.getElementById("otp1").value;
-            const otp2 = document.getElementById("otp2").value;
-            const otp3 = document.getElementById("otp3").value;
-            const otp4 = document.getElementById("otp4").value;
-
-            // Validate OTP fields
-            if (!otp1 || !otp2 || !otp3 || !otp4) {
-                document.getElementById("error-message").textContent = "Please enter the full OTP.";
-                return;
-            }
-
-            // Combine the OTP
-            const otp = otp1 + otp2 + otp3 + otp4;
-
-            // Simulate OTP verification (replace with backend call in real-world)
-            if (otp === "1234" ) { // Just a demo OTP
-                alert("OTP verified! You can now reset your password."); 
-                window.location.href='newpass.html'              
-                // Proceed to password reset logic (redirect or show password reset form)
-            }
-             else {
-                document.getElementById("error-message").textContent = "Invalid OTP. Please try again.";
-            }
+            // Simulate email verification (replace with backend call in real-world)
+            alert("Verification email sent! Please check your inbox."); 
+            window.location.href='newpass.html';
         });
     </script>
-
 </body>
 </html>
