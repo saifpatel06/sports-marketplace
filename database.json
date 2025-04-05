@@ -29,6 +29,12 @@
       "name": "pathan",
       "email": "tabish.pathan.0707@gmail.com",
       "password": "$2b$10$NIUI06eymTIC.7kADeXSQOamTDDn0G9G432FOvsuNqB/94CuJMEIG"
+    },
+    {
+      "id": "67be72dd-7cd8-4100-bbaf-34760ee18a47",
+      "name": "saifpatel",
+      "email": "saifradiocity@gmail.com",
+      "password": "$2b$10$GOL0q0cpEz2VQFLWcJtwDew0WG8e8GvwyMwK8IxuwosL4IZ28iX5."
     }
   ],
   "products": [

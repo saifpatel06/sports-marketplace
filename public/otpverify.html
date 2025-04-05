@@ -140,8 +140,26 @@
                 return;
             }
 
-            // Simulate email verification (replace with backend call in real-world)
-            alert("Verification email sent! Please check your inbox."); 
+            // Sending email to the backend to initiate the password reset process
+            fetch('http://localhost:3000/api/auth/forgot-password', { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === 'Password reset link sent') {
+                    alert('Password reset email has been sent. Please check your inbox.');
+                } else {
+                    document.getElementById("error-message").textContent = data.message;
+                }
+            })
+            .catch(err => {
+                document.getElementById("error-message").textContent = 'Something went wrong. Please try again later.';
+                console.error('Error:', err);
+            });
         });
     </script>
 </body>
