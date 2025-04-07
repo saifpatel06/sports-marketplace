@@ -154,12 +154,11 @@
     </div>
 
     <script>
-        // Function to load user profile data from the API
         async function loadUserProfile() {
             try {
                 const response = await fetch('http://localhost:3000/api/editprofile/getProfile', {
                     method: 'GET',
-                    credentials: 'include', // Send cookies with the request
+                    credentials: 'include',
                 });
                 
                 if (!response.ok) {
@@ -169,20 +168,17 @@
                 const data = await response.json();
                 console.log('User Data:', data);
 
-                // Function to check if a value is undefined and return an empty string if true
                 const getValueOrEmpty = (value) => value === undefined || value === null ? "" : value;
 
-                // Populate the form fields with the response data or set blank if undefined
                 document.getElementById('name').value = getValueOrEmpty(data.name);
                 document.getElementById('email').value = getValueOrEmpty(data.email);
                 document.getElementById('address').value = getValueOrEmpty(data.address);
                 document.getElementById('phone').value = getValueOrEmpty(data.phone);
 
-                // Optional: Set profile picture (if available)
                 if (data.profilePicture) {
                     document.getElementById('profilePhoto').src = data.profilePicture;
                 } else {
-                    document.getElementById('profilePhoto').src = 'user.png'; // Use a default image if none
+                    document.getElementById('profilePhoto').src = 'user.png';
                 }
             } catch (error) {
                 console.error('Error loading user profile:', error);
@@ -190,7 +186,6 @@
             }
         }
 
-        // Call the function to load user profile when the page loads
         window.onload = loadUserProfile;
 
         // Save button click event

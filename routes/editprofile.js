@@ -9,7 +9,7 @@ const fs = require('fs');
 // Set up multer storage for saving files to disk (you can change the path as needed)
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './public');  // Change this to the desired directory
+        cb(null, './public');
     },
     filename: (req, file, cb) => {
         const fileExtension = path.extname(file.originalname);
@@ -40,16 +40,12 @@ router.get('/getProfile', (req, res) => {
 
     console.log("Found user:", user);
 
-    const profilePictureUrl = user.profilePicture 
-        ? `./public/${user.profilePicture}` 
-        : null;
-
     res.status(200).json({
         name: user.name,
         email: user.email,
         address: user.address,
         phone: user.phone,
-        profilePicture: profilePictureUrl,
+        profilePicture: user.profilePicture,
     });
 });
     
