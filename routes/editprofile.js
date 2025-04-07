@@ -21,7 +21,6 @@ const upload = multer({ storage: storage });
 
 // Get user profile data
 router.get('/getProfile', (req, res) => {
-    console.log("Cookies:", req.cookies);
 
     const userId = req.cookies.userId;
 
@@ -38,7 +37,6 @@ router.get('/getProfile', (req, res) => {
         return res.status(404).json({ message: 'User not found' });
     }
 
-    console.log("Found user:", user);
 
     res.status(200).json({
         name: user.name,
@@ -50,9 +48,6 @@ router.get('/getProfile', (req, res) => {
 });
     
 router.post('/updateProfile', upload.single('profilePicture'), (req, res) => {
-    console.log("Request headers:", req.headers);
-    console.log("Request body:", req.body); 
-    console.log("Uploaded file:", req.file); 
 
     const userId = req.cookies.userId;
 
@@ -69,7 +64,6 @@ router.post('/updateProfile', upload.single('profilePicture'), (req, res) => {
         return res.status(404).json({ message: 'User not found' });
     }
 
-    // Update user data with the new values from the request body
     const { name, email, address, phone } = req.body;
 
     if (name) user.name = name;
@@ -81,10 +75,7 @@ router.post('/updateProfile', upload.single('profilePicture'), (req, res) => {
         user.profilePicture = req.file.filename; 
     }
 
-    // Save the updated database
     saveDatabase(db);
-
-    console.log("Updated user:", user);
 
     res.status(200).json({ message: 'Profile updated successfully', user: user });
 });
