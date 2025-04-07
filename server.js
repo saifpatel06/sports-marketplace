@@ -6,6 +6,16 @@ const { verifyToken } = require('./middleware/auth');
 const app = express();
 const PORT = 3000;
 const DB_PATH = path.join(__dirname, 'database.json');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
+
+
+app.use(cors({
+    origin: 'http://localhost:3000', 
+    credentials: true     
+}));
+
+app.use(cookieParser());
 
 // Initialize database file if it doesn't exist
 if (!fs.existsSync(DB_PATH)) {
@@ -24,6 +34,7 @@ app.use('/api/products', require('./routes/products'));
 // Protected Routes - require authentication
 app.use('/api/cart', verifyToken, require('./routes/cart'));
 app.use('/api/orders', verifyToken, require('./routes/orders'));
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {

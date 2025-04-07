@@ -33,7 +33,19 @@ router.post('/register', (req, res) => {
             { expiresIn: '24h' }
         );
 
-        res.status(201).json({
+        res
+        .cookie('userId', newUser.id, {
+            httpOnly: true,
+            maxAge: 24 * 60 * 60 * 1000, // 1 day
+            sameSite: 'Lax',
+        })
+        .cookie('userName', newUser.name, {
+            httpOnly: false, // You can access this in client-side JS if needed
+            maxAge: 24 * 60 * 60 * 1000,
+            sameSite: 'Lax',
+        })
+        .status(201)
+        .json({
             message: 'User registered successfully',
             token,
             user: {
@@ -42,6 +54,7 @@ router.post('/register', (req, res) => {
                 email: newUser.email
             }
         });
+
     });
 });
 
@@ -80,7 +93,19 @@ router.post('/login', (req, res) => {
                 { expiresIn: '24h' }
             );
 
-            res.status(200).json({
+            res
+            .cookie('userId', user.id, {
+                httpOnly: true,
+                maxAge: 24 * 60 * 60 * 1000,
+                sameSite: 'Lax',
+            })
+            .cookie('userName', user.name, {
+                httpOnly: false,
+                maxAge: 24 * 60 * 60 * 1000,
+                sameSite: 'Lax',
+            })
+            .status(200)
+            .json({
                 message: 'Login successful',
                 token,
                 user: {
@@ -89,6 +114,7 @@ router.post('/login', (req, res) => {
                     email: user.email
                 }
             });
+
         } else {
             res.status(401).json({ message: 'Invalid email or password' });
         }
