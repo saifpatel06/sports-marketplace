@@ -4,31 +4,46 @@
       "id": "0405037a-ac1d-446f-937e-a5a9e16c8b59",
       "name": "test",
       "email": "test@test.com",
-      "password": "$2b$10$gixUOk9e3hiSIr5e2PtaBeL3phFZzB8A9MRVctRyPOVjBJsINx1iG"
+      "password": "$2b$10$gixUOk9e3hiSIr5e2PtaBeL3phFZzB8A9MRVctRyPOVjBJsINx1iG",
+      "address": "",
+      "phone": "",
+      "profilePicture": ""
     },
     {
       "id": "74532755-3b4e-4b2f-8c62-0ca4fd0ad851",
       "name": "test2",
       "email": "test2@test.com",
-      "password": "$2b$10$Zf1S1G8Xh0FREDsCm65Npu3gnBXICeklgdjRF8jcnnZF8S2Ocr0gi"
+      "password": "$2b$10$Zf1S1G8Xh0FREDsCm65Npu3gnBXICeklgdjRF8jcnnZF8S2Ocr0gi",
+      "address": "",
+      "phone": "",
+      "profilePicture": ""
     },
     {
       "id": "f4525219-98b9-49b5-bbf6-695e49c4ad60",
       "name": "tabish",
       "email": "tabish@test.com",
-      "password": "$2b$10$nHwg33.1nO5w5WymCwkfSOQXTv/2DhxrgQS0gcVj77yFOrOS5A0SK"
+      "password": "$2b$10$nHwg33.1nO5w5WymCwkfSOQXTv/2DhxrgQS0gcVj77yFOrOS5A0SK",
+      "address": "",
+      "phone": "",
+      "profilePicture": ""
     },
     {
       "id": "e9b5eea5-92b3-427e-be69-19c5b9645e11",
       "name": "mdabdulmusqsit",
       "email": "atifsrk08@gmail.com",
-      "password": "$2b$10$GQtayy0OD/.6lfy4rzxccOdXmApu2fjWr3B.qXz2ZS4VPMBVMtWXq"
+      "password": "$2b$10$GQtayy0OD/.6lfy4rzxccOdXmApu2fjWr3B.qXz2ZS4VPMBVMtWXq",
+      "address": "",
+      "phone": "",
+      "profilePicture": ""
     },
     {
       "id": "8d04508e-c3e1-48b7-b6b2-8452af84aa6e",
       "name": "pathan",
       "email": "tabish.pathan.0707@gmail.com",
-      "password": "$2b$10$NIUI06eymTIC.7kADeXSQOamTDDn0G9G432FOvsuNqB/94CuJMEIG"
+      "password": "$2b$10$NIUI06eymTIC.7kADeXSQOamTDDn0G9G432FOvsuNqB/94CuJMEIG",
+      "address": "",
+      "phone": "",
+      "profilePicture": ""
     },
     {
       "id": "67be72dd-7cd8-4100-bbaf-34760ee18a47",
@@ -37,7 +52,7 @@
       "password": "$2b$10$GOL0q0cpEz2VQFLWcJtwDew0WG8e8GvwyMwK8IxuwosL4IZ28iX5.",
       "address": "Pune, India",
       "phone": "9876543210",
-      "profilePicture": "1744027710954.png"
+      "profilePicture": "1744028787217.png"
     }
   ],
   "products": [
