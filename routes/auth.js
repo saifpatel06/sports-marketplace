@@ -9,7 +9,7 @@ const { verifyToken, JWT_SECRET } = require('../middleware/auth');
 
 // Register Route
 router.post('/register', (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, address = "", phone = "", profilePicture = "" } = req.body;
     if (!name || !email || !password) {
         return res.status(400).json({ message: 'All fields are required' });
     }
@@ -22,7 +22,7 @@ router.post('/register', (req, res) => {
     bcrypt.hash(password, 10, (err, hash) => {
         if (err) return res.status(500).json({ message: 'Error hashing password' });
 
-        const newUser = { id: uuid.v4(), name, email, password: hash };
+        const newUser = { id: uuid.v4(), name, email, password: hash, address, phone, profilePicture };
         db.users.push(newUser);
         saveDatabase(db);
 
@@ -51,7 +51,10 @@ router.post('/register', (req, res) => {
             user: {
                 id: newUser.id,
                 name: newUser.name,
-                email: newUser.email
+                email: newUser.email,
+                address: newUser.address,
+                phone: newUser.phone,
+                profilePicture: newUser.profilePicture,
             }
         });
 
